@@ -1,0 +1,204 @@
+/* ====== BLOC 2 : Hero ====== */
+.hero {
+  background: var(--beige);
+  padding-top: var(--space-6);
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+  background-image: url(src/assets/Pepetree-hero-peper.png);
+  padding-bottom: 25%;
+}
+@media (min-width: 600px) {
+  .hero-inner {
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 599px) {
+  .hero-inner {
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-copy h1 {
+  margin: 0 0 var(--space-2);
+  color: var(--violet);
+  font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem);
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  justify-self: center;
+  text-align: center;
+}
+
+.hero-copy .subtitle {
+  margin: 0 0 var(--space-4);
+  max-width: 30vw;
+  line-height: 1.5;
+  text-align: center;
+  justify-self: center;
+}
+
+.highlight-text {
+    background-color: #ead1bac6;
+}
+
+/* .hero-cta {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+/* ====== BLOC 3 : Marquee ====== */
+.marquee {
+  background: var(--paper);
+  color: var(--magenta);
+  overflow: hidden;
+  border-bottom: 3px solid var(--magenta);
+  margin-bottom: var(--space-5);
+}
+.marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 10px 0;
+  animation: slide 18s linear infinite;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ====== BLOC 4 : Produits ====== */
+.product-row {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-card {
+  flex: 1 1 240px;
+  max-width: 260px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 5px 6px 0px 0px rgba(236,48,146,0.7);
+  padding: var(--space-3);
+  border: 2px solid rgba(236,48,146,0.7);
+}
+.product-card h3 {
+  margin: 10px 0 6px;
+  color: var(--violet);
+  font-size: 1.05rem;
+}
+.product-card .price {
+  margin: 0 0 12px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.section-foot {
+  display: flex;
+  justify-content: center;
+  margin: var(--space-5) 0;
+}
+.section-foot .link {
+  color: var(--magenta);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ====== BLOC 5 : Actus ====== */
+.marquee-stories {
+  background: var(--turquoise);
+  color: var(--violet);
+  overflow: hidden;
+  margin-bottom: var(--space-5);
+}
+.news {
+  background: var(--turquoise);
+}
+.news-grid {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: var(--space-5);
+}
+.news-card {
+  flex: 1 1 240px;
+  max-width: 260px;
+  border-radius: var(--radius);
+  padding: var(--space-3);
+}
+.news-card h3 {
+  margin: 10px 0 6px;
+  font-size: 1rem;
+}
+.news-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #fff;
+}
+/* .news-pagination {
+  color: #fff;
+  justify-self: center;
+} */
+
+/* ====== BLOC 6 : Vague ====== */
+.wave-sep {
+  background: var(--turquoise);
+}
+.wave-sep svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+  fill: var(--paper);
+}
+
+/* ====== BLOC 7 : Tip Jar ====== */
+.tipjar {
+  color: #062f30;
+  padding-bottom: var(--space-6);
+}
+
+.tipjar-copy {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.tipjar-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+@media (max-width: 599px) {
+  .tipjar-inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+}
+
+.tipjar h2 {
+  margin: 0 0 8px;
+  color: #062f30;
+}
+
+.tipjar p {
+  margin: 0 0 var(--space-3);
+  max-width: 48ch;
+}

@@ -1,0 +1,51 @@
+.apropos-page {
+  background-image: url("src/assets/Pepetree-background-pattern.jpg");
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.apropos-title h1 {
+    text-align: center;
+    color: var(--magenta);
+    font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    justify-self: center;
+}
+
+.section-apropos {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 50px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4);
+    background-color: var(--paper);
+    margin: 0px 5% 100px 5%;
+    padding: 5%;
+}
+
+@media (min-width: 600px) {
+   .peper-introduction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+    } 
+}
+.peper-introduction-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .boutique-intime {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4);
+    }
+}
+.boutique-intime-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

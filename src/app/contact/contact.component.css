@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+    color: var(--magenta);
+    font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    justify-self: center;
+}
+
+.faq-section {
+    padding: 0 10%;
+    text-align: justify;
+}
+
+h3 {
+  color: var(--violet);
+}
+
+.last-question-faq {
+  padding: 20px 0;
+}
+
+
+/* ====== BLOC 3 : Marquee ====== */
+/* .marquee {
+  background: var(--paper);
+  color: var(--magenta);
+  overflow: hidden;
+  border-bottom: 3px solid var(--magenta);
+  margin-bottom: var(--space-5);
+}
+.marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 10px 0;
+  animation: slide 18s linear infinite;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.marquee-track span {
+  margin-right: 32px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+
+/* ====== BLOC 8 : Contact ====== */
+/* .marquee-contact {
+  background: var(--green);
+  color: var(--paper);
+  overflow: hidden;
+  padding-bottom: var(--space-3);
+}
+.contact {
+  background: var(--green);
+  padding: var(--space-6) 0;
+} */

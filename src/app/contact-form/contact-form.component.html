@@ -1,0 +1,22 @@
+<div class="form-group">
+ <div class="contact-title">Tu souhaites commander ou as une question sur ta commande ?</div>
+  <div class="container contact-inner">
+    <form class="contact-form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+      <label>
+        <span class="sr-only">Prénom</span>
+        <input type="text" class="form-control" id="name" placeholder="Prénom" required 
+        [(ngModel)]="model.name" name="name"
+        />
+      </label>
+      <label>
+        <span class="sr-only">Email</span>
+        <input type="email" placeholder="Email" required />
+      </label>
+      <label class="full">
+        <span class="sr-only">Message</span>
+        <textarea rows="4" placeholder="Message" required></textarea>
+      </label>
+      <button class="btn btn-primary-pink" type="submit">Envoyer</button>
+    </form>
+  </div>
+</div>

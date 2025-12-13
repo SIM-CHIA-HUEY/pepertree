@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+
+/* Utils */
+.container {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ====== BLOC 0 : Promo ====== */
+.promo-bar {
+  color: var(--violet);
+  font-size: 0.9rem;
+}
+.promo-bar .container {
+  text-align: center;
+}
+
+/* ====== BLOC 1 : Header ====== */
+.site-header {
+  background: var(--violet);
+}
+.header-inner {
+  flex-direction: row !important;
+  padding: var(--space-3) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+
+.brand {
+  display: inline-flex;
+  width: 10em;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--violet);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+
+/* ===== Bouton hamburger ===== */
+.hamburger {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+}
+
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--paper); 
+  border-radius: 2px;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100vh;
+  background: var(--violet); 
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 60px 20px;
+  transition: left 0.2s ease;
+  z-index: 2000; 
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--violet);
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--paper); 
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.sidebar a.active {
+  color: var(--magenta);
+}
+
+/* ===== Overlay (fond semi-transparent) ===== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1999;
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+    position: relative !important;
+  }
+  .sidebar {
+    left: 0;
+    position: static;
+    width: 200px;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .overlay {
+    display: none;
+  }
+  .sidebar ul {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+
+/* ====== BLOC 9 : Footer ====== */
+.site-footer {
+  background: var(--beige);
+  color: var(--ink);
+}
+.footer-top-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--violet);
+    color: var(--paper);
+    padding: 20px;
+}
+.instagram-qr-image {
+    width: 150px;
+}
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding: var(--space-5) 0;
+  flex-wrap: wrap;
+}
+.footer-col {
+  min-width: 200px;
+}
+.footer-col h3 {
+  margin: 0 0 8px;
+  color: var(--violet);
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.footer-col a:hover {
+  color: var(--magenta);
+}
+.newsletter {
+  display: flex;
+  gap: 8px;
+}
+.newsletter input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid rgba(72, 49, 123, 0.2);
+  border-radius: 12px;
+}
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--violet);
+  padding: var(--space-6);
+  font-size: 0.95rem;
+}
+.payment-images {
+    display: flex;
+    gap: var(--space-3);
+}
+.payment-logo {
+    width: 100px;
+}
+.footer-bottom {
+  background: var(--violet);
+  color: white;
+  width: 100%;
+  justify-self: center;
+  padding: var(--space-6);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 960px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-cta {
+    justify-content: center;
+  }
+  .tipjar-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-nav {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-row,
+  .news-grid {
+    justify-content: center;
+  }
+  .product-card,
+  .news-card {
+    max-width: 100%;
+  }
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

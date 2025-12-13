@@ -1,0 +1,54 @@
+.product-page {
+  background-image: url("src/assets/Pepetree-background-pattern.jpg");
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.boutique-title h1 {
+    text-align: center;
+    color: var(--magenta);
+    font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    justify-self: center;
+}
+
+.section-products {
+    display: inline-flex;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4);
+    background-color: var(--paper);
+    margin: 0px 5% 100px 5%;
+    padding: 5%;
+}
+
+@media (min-width: 600px) {
+  .product-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+}
+@media (max-width: 599px) {
+  .product-row {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+}
+
+.product-card {
+  flex: 1 1 240px;
+  border-radius: var(--radius);
+  padding: var(--space-3);
+}
+.product-card h3 {
+  margin: 10px 0 6px;
+  color: var(--violet);
+  font-size: 1.05rem;
+}
+.product-card .price {
+  margin: 0 0 12px;
+  font-weight: 800;
+  color: var(--ink);
+}

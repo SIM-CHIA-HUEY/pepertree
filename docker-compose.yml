@@ -1,0 +1,11 @@
+#version: '3'
+#COMMENTS Above version shuold be written if your Docker version is not the newest.
+
+services:
+  web:
+    image: nginx
+    volumes:
+    - ./dist/pepertree-test:/usr/share/nginx/html
+#COMMENTS ./dist/frontend above is the path to your html file.
+    ports:
+    - "8080:80"

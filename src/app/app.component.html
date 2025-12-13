@@ -1,0 +1,99 @@
+<!-- ====== BLOC 0 : Bandeau promo ====== -->
+<div class="promo-bar">
+  <div class="container">
+    <p>
+      -10% sur la première commande — <strong>Frais de port offerts</strong> à partir de 50€ — Offre de bienvenue 💜
+    </p>
+  </div>
+</div>
+
+<!-- ====== BLOC 1 : Header / Navigation ====== -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <!-- LOGO -->
+    <a class="brand" routerLink="/">
+      <span class="brand-logo" aria-hidden="true">
+        <img src="/assets/Pepetree-Website-Logo-type2-white.png"/>
+      </span>
+    </a>
+
+    <!-- Bouton hamburger -->
+    <button class="hamburger" (click)="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" [class.open]="isOpen">
+      <ul>
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a></li>
+        <li><a routerLink="/boutique" routerLinkActive="active">Boutique</a></li>
+        <li><a routerLink="/quiestpeper" routerLinkActive="active">Péper</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Overlay (clic pour fermer) -->
+    <div class="overlay" *ngIf="isOpen" (click)="toggleSidebar()"></div>
+
+
+
+
+<!-- Change BASKET icon, bag shopping didnt work... -->
+    <!-- <a><i class="fa-duotone fa-solid fa-bag-shopping"></i></a> -->
+    <!-- <a><i class="fa fa-store"></i></a> -->
+  </div>
+</header>
+
+<router-outlet></router-outlet> 
+
+
+
+<!-- ====== BLOC 9 : Footer ====== -->
+<footer class="site-footer">
+  <!-- <div class="container footer-top">
+    <div class="footer-col">
+      <ul>
+        <li><a routerLink="/">Accueil</a></li>
+        <li><a routerLink="/boutique">Stickers</a></li>
+        <li><a routerLink="/quiestpeper">Qui est Péper</a></li>
+        <li><a routerLink="/contact">Contact & FAQ</a></li>
+        <li><a routerLink="/">Conditions Générales de Ventes et Politique de retours</a></li>
+      </ul>
+    </div>
+
+    <div class="payment-images">
+      <img class="payment-logo"
+        src="https://placehold.co/360x220/48317B/EAD1BA?text=payment"
+        alt="Paypal (placeholder)"
+      />
+      <img class="payment-logo"
+        src="https://placehold.co/360x220/48317B/EAD1BA?text=payment"
+        alt="Visa (placeholder)"
+      />
+      <img class="payment-logo"
+        src="https://placehold.co/360x220/48317B/EAD1BA?text=payment"
+        alt="Master (placeholder)"
+      />
+    </div>
+
+    <div class="footer-col">
+      <form (submit)="$event.preventDefault()">
+        <label class="sr-only">Email</label>
+        <div class="newsletter">
+          <input type="email" placeholder="Ton email" />
+          <button class="btn btn-dark" type="submit">Inscrire à la newsletter</button>
+        </div>
+      </form>
+    </div>
+
+  </div> -->
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2025 PÉPER TREE — Tous droits réservés. Ce site est réalisé par sim-graphicdesign.com</p>
+    </div>
+  </div>
+</footer>
