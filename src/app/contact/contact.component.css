@@ -1,24 +1,7 @@
-h1 {
+.contact-mail {
+    padding: 30vh 0;
+    height: 80vh;
     text-align: center;
-    color: var(--magenta);
-    font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem);
-    font-family: "Cherry Bomb One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    justify-self: center;
-}
-
-.faq-section {
-    padding: 0 10%;
-    text-align: justify;
-}
-
-h3 {
-  color: var(--violet);
-}
-
-.last-question-faq {
-  padding: 20px 0;
 }
 
 

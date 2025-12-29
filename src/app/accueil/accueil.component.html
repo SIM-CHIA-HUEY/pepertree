@@ -6,7 +6,7 @@
       <p class="subtitle">
         <mark class="highlight-text">
          Bienvenue dans ma petite boutique. 
-          <br>Ici, on célèbre la bonne humeur et l’humour tendre sous forme de 
+          <br>Ici, on célèbre la bonne humeur sous forme de 
           stickers trop mignons à collectionner et des histoires à partager ! 
           Explore, souris, et laisse-toi surprendre.
         </mark>
@@ -31,54 +31,63 @@
 <section class="section products">
   <div class="container">
 
+    <!-- Pop-up dialog box Produit -->
+    <dialog class="productDialog" *ngIf="isModalShow">
+      <div class="modalContent">
+
+        <div>
+          <p *ngIf="mobileView" class="close-button" (click)="closeModal()"><i class="fa-solid fa-xmark"></i></p>
+        </div>
+
+        <div>
+          <img
+            src={{modalImage}}
+            alt="productImage"
+            class="modalImage"
+          />
+        </div>
+
+        <div class="information-produit">
+          <div>
+            <p *ngIf="!mobileView" class="close-button" (click)="closeModal()"><i class="fa-solid fa-xmark"></i></p>
+          </div>
+          <div>
+            <h3>{{modalTitle}}</h3>
+            <p class="price">{{modalPrice}}</p>
+          </div>
+          <div class="instruction-commander">
+            <p><u>Pour commander :</u> 
+              <br><b>Note les références (ex : MA01)</b> ou les noms des produits que tu veux, ajoute <b>ton nom, prénom et ton adresse de livraison</b> — ou dis-moi si tu préfères une remise en main propre.
+          Puis envoie-moi tout ça par mail à : <b>peper.atelier@gmail.com</b> 💌✨</p>
+          </div>
+        </div>
+
+      </div>
+    </dialog>
+
+    <!-- Cartes produit -->
     <div class="product-row">
-      <!-- Carte produit -->
-      <article class="product-card">
-        <img
-          src="/assets/MyrtilleConcentre_de_PerperTree-1.jpg"
-          alt="Myrtille Concentrate"
-        />
-        <h3>Sticker autocollant Holographique de Myrtille Concentré MY01</h3>
-        <p class="price">€3,50</p>
-        <!-- <button class="btn btn-buy" type="button">Ajouter au panier</button> -->
-      </article>
-
-      <article class="product-card">
-        <img
-          src="/assets/MaxouCosplay-PeperTree.jpg"
-          alt="Maxou en cosplay"
-        />
-        <h3>Sticker autocollant Transparent de Maxou en Dino MA01</h3>
-        <p class="price">€3,20</p>
-        <!-- <button class="btn btn-buy" type="button">Ajouter au panier</button> -->
-      </article>
-
-      <article class="product-card">
-        <img
-          src="/assets/MellowCachee-Pepertree.jpg"
-          alt="Mellow hidden"
-        />
-        <h3>Sticker autocollant Transparent de Mellow dans son chaudron ME01</h3>
-        <p class="price">€1,50</p>
-        <!-- <button class="btn btn-buy" type="button">Ajouter au panier</button> -->
-      </article>
-
-      <article class="product-card">
-        <img
-          src="/assets/PouetteNoel-PeperTree.jpg"
-          alt="Pouette Christmas"
-        />
-        <h3>Sticker autocollant Scintillant de Pouette pour Noël PO01</h3>
-        <p class="price">€3,20</p>
-        <!-- <button class="btn btn-buy" type="button">Ajouter au panier</button> -->
-      </article>
+      <div *ngFor="let item of productPeperTree; let i=index">
+        <article class="product-card" (click)="openModal(item.id)">
+          <img
+              src={{item.image}}
+              alt="Produit PéperTree"
+            />
+          <h3>{{item.name}}</h3>
+          <p class="price">€{{item.price}}</p>
+          <!-- <button class="btn btn-buy" type="button">Ajouter au panier</button> -->
+        </article>
+      </div>
     </div>
 
     <div class="section-foot">
       <a href="/boutique" class="link">Voir la boutique</a>
     </div>
+
   </div>
 </section>
+
+
 
 <!-- ====== BLOC 5 : Tableau des actus ====== -->
 <section class="section news">
@@ -96,7 +105,7 @@
           src="/assets/Pepertree-intagram-post.jpg"
           alt="Actualité 1 (placeholder)"
         />
-        <h3>Bienvenue qu Café des Moods de Péper. 7 humeurs, 7 boissons bizarres : Calme, Déterminé, Amoureux...</h3>
+        <h3>Bienvenue au Café des Moods de Péper. 7 humeurs, 7 boissons bizarres : Calme, Déterminé, Amoureux...</h3>
         <!-- <p>05.08.2025</p> -->
       </article>
 
@@ -114,7 +123,7 @@
           src="/assets/Pepertree-intagram-post3.jpg"
           alt="Actualité 3 (placeholder)"
         />
-        <h3>Visite de musée, check; Contemplation existentielle, check; Donut bleu en guise de conclusion...</h3>
+        <h3>Visite de musée, check! Contemplation existentielle, check! Donut bleu en guise de conclusion...</h3>
         <!-- <p>05.08.2025</p> -->
       </article>
 
@@ -123,7 +132,7 @@
           src="/assets/peper.tree_qr-2.png"
           alt="peper.tree"
         />
-        <h3>Voir plus sur Instagram</h3>
+        <a href="https://www.instagram.com/peper.tree/"><h3>Voir plus sur Instagram</h3></a>
       </article>
     </div>
 

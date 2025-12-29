@@ -10,6 +10,7 @@ import { BoutiqueComponent } from './boutique/boutique.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ContactComponent } from './contact/contact.component';
 import { AproposComponent } from './apropos/apropos.component';
+import { FaqComponent } from './faq/faq.component';
 // import { JsonPipe } from '@angular/common';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AproposComponent } from './apropos/apropos.component';
     BoutiqueComponent,
     AccueilComponent,
     ContactComponent,
-    AproposComponent
+    AproposComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
