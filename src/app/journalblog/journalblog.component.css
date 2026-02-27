@@ -6,14 +6,16 @@
 
 .articles-group {
     display: flex;
-    padding: 10px;
-    justify-content: center;
+    padding: 1vw 3vw;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .article-card {
     width: 30vw;
     padding: 30px;
-    margin: 10px;
+    margin: 10px 0;
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4);
     border-radius: 20px;
 }
@@ -23,4 +25,8 @@
     color: var(--violet);
     font-style: italic;
     text-align: end;
+}
+
+.article-video {
+    justify-self: center;
 }
