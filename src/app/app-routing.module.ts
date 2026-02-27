@@ -5,6 +5,7 @@ import { BoutiqueComponent } from './boutique/boutique.component';
 import { AproposComponent } from './apropos/apropos.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
+import { JournalblogComponent } from './journalblog/journalblog.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'quiestpeper', component: AproposComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'faq', component: FaqComponent },
+  { path: 'journal', component: JournalblogComponent },
   { path: '**', redirectTo: '' } // Wildcard route
 ];
 

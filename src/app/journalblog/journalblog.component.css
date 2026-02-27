@@ -1,0 +1,26 @@
+.journal-title {
+    text-align: center;
+    color: var(--violet);
+    padding: 40px 0 20px 0 ;
+}
+
+.articles-group {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.article-card {
+    width: 30vw;
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+
+.article-date {
+    font-size: smaller;
+    color: var(--violet);
+    font-style: italic;
+    text-align: end;
+}

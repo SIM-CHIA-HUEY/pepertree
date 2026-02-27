@@ -11,6 +11,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ContactComponent } from './contact/contact.component';
 import { AproposComponent } from './apropos/apropos.component';
 import { FaqComponent } from './faq/faq.component';
+import { JournalblogComponent } from './journalblog/journalblog.component';
 // import { JsonPipe } from '@angular/common';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FaqComponent } from './faq/faq.component';
     AccueilComponent,
     ContactComponent,
     AproposComponent,
-    FaqComponent
+    FaqComponent,
+    JournalblogComponent
   ],
   imports: [
     BrowserModule,
