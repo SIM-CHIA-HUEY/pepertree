@@ -30,3 +30,56 @@
 .article-video {
     justify-self: center;
 }
+
+ul {
+  padding: 0 20px;
+  justify-self: center;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  anchor-name: --my-carousel;
+}
+
+li {
+  list-style-type: none;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+
+ul::scroll-button(*) {
+  border: 0;
+  font-size: 1.5rem;
+  background: none;
+  color: var(--violet);
+  opacity: 0.7;
+  cursor: pointer;
+  position: absolute;
+  position-anchor: --my-carousel;
+}
+
+ul::scroll-button(*):hover,
+ul::scroll-button(*):focus {
+  opacity: 1;
+}
+
+ul::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+ul::scroll-button(*):disabled {
+  opacity: 0.2;
+  cursor: unset;
+}
+
+ul::scroll-button(left) {
+  content: "◄" / "Previous";
+  right: calc(anchor(left) - 20px);
+  bottom: calc(anchor(bottom) + 150px);
+}
+
+ul::scroll-button(right) {
+  content: "►" / "Next";
+  left: calc(anchor(right) - 20px);
+  bottom: calc(anchor(bottom) + 150px);
+}
