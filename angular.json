@@ -92,5 +92,8 @@
       }
     }
   },
-  "defaultProject": "pepertree-test"
+  "defaultProject": "pepertree-test",
+  "cli": {
+    "analytics": "662f3004-1019-41ee-a733-b043386a7d1d"
+  }
 }
