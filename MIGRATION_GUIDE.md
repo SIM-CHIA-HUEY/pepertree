@@ -3,68 +3,6 @@
 ## Overview
 This guide provides step-by-step instructions to migrate the PeperTree e-commerce project from Angular 13 to Angular 21.
 
-## Prerequisites
-- Current Angular version: 13.2.0
-- Current Node.js version: Check with `node -v`
-- Current npm version: Check with `npm -v`
-
-## Migration Steps
-
-### Phase 1: Preparation
-
-#### 1. Update Node.js and npm
-```bash
-# Install Node.js 18.13.0 or newer
-nvm install 18.13.0
-nvm use 18.13.0
-
-# Update npm to version 10.0.0 or newer
-npm install -g npm@10.0.0
-```
-
-#### 2. Backup and create migration branch
-```bash
-git checkout -b angular-21-migration
-git push origin angular-21-migration
-```
-
-### Phase 2: Incremental Angular Updates
-
-#### 3. Angular 13 → 14
-```bash
-ng update @angular/core@14 @angular/cli@14
-npm install
-ng serve  # Test the application
-```
-
-#### 4. Angular 14 → 15
-```bash
-ng update @angular/core@15 @angular/cli@15
-npm install
-ng serve  # Test the application
-```
-
-#### 5. Angular 15 → 16
-```bash
-ng update @angular/core@16 @angular/cli@16
-npm install
-ng serve  # Test the application
-```
-
-#### 6. Angular 16 → 17 (Major changes)
-```bash
-ng update @angular/core@17 @angular/cli@17
-npm install
-ng serve  # Test the application
-```
-
-#### 7. Angular 17 → 18
-```bash
-ng update @angular/core@18 @angular/cli@18
-npm install
-ng serve  # Test the application
-```
-
 #### 8. Angular 18 → 19
 ```bash
 ng update @angular/core@19 @angular/cli@19
