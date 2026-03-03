@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pepertree-test:build:production"
+              "buildTarget": "pepertree-test:build:production"
             },
             "development": {
-              "browserTarget": "pepertree-test:build:development"
+              "buildTarget": "pepertree-test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pepertree-test:build"
+            "buildTarget": "pepertree-test:build"
           }
         },
         "test": {
