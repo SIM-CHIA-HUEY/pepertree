@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-boutique',
-  templateUrl: './boutique.component.html',
-  styleUrls: ['./boutique.component.css']
+    selector: 'app-boutique',
+    templateUrl: './boutique.component.html',
+    styleUrls: ['./boutique.component.css'],
+    standalone: false
 })
 export class BoutiqueComponent implements OnInit {
   

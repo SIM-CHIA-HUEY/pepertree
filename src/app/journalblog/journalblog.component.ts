@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import * as journalContent from '../../assets/content/journal-content.json';
 
 @Component({
-  selector: 'app-journalblog',
-  templateUrl: './journalblog.component.html',
-  styleUrls: ['./journalblog.component.css']
+    selector: 'app-journalblog',
+    templateUrl: './journalblog.component.html',
+    styleUrls: ['./journalblog.component.css'],
+    standalone: false
 })
 export class JournalblogComponent implements OnInit {
   // The ().default accesses the actual JSON content, when you import it like a module, instead of HttpClient.
