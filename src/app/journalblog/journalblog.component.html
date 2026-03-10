@@ -3,152 +3,55 @@
 </div>
 
 <div class="articles-group">
-  @for (content of contents; track content) {
+  @for (content of reversedContents; track content) {
     <div class="article-card">
-      <!-- if 0 image :video ;if 1 image:image ; if >1image : carousel -->
-      <!-- <img *ngIf="singleImage" src={{content.image}}/> -->
-      <!-- <div *ngIf="multipleImagesArray.length===1"> -->
-      <!-- single image     -->
-    <!-- </div> -->
-    <!-- <div *ngIf="multipleImagesArray.length>1"> -->
-    <!-- multiple image -->
-    @for (image of content.image; track image) {
-      <div>
-        <img src={{image}}/>
-        <!-- <p>{{image}}</p> -->
-      </div>
-    }
-  <!-- </div> -->
-  @if (content.video) {
-    <video width="320" controls loop>
-      <source src={{content.video}} type="video/mp4">
-    </video>
-  }
-  <p>{{content.textFrench}}</p>
-  <p>- - -</p>
-  <p>{{content.textEnglish}}</p>
-</div>
-}
-</div>
-
-
-<div class="articles-group">
-  <div class="article-card">
-    <div class="article-video" >
-      <video width="320" controls loop>
-        <source src="/assets/journal/9.mp4" type="video/mp4">
-      </video>
-    </div>
-    <p class="article-date">19/08/2025</p>
-    <p>
-      Ce matin, j’ai demandé à mes amis quelle était leur routine… et j’ai eu des réponses très… variées.L’un ne jure que par son café, l’autre médite 20 minutes, un autre fait du sport… et puis il y a celui qui se rendort trois fois (devinez qui 🙈).
-      <br>Et moi ? Je crois que j’aime juste commencer la journée avec mon petit thé nuage et un moment calme.On a tous notre manière de se réveiller, et c’est parfait comme ça. ☀️
-        <br>Et toi, c’est quoi ta routine du matin ?
-          <br>—-
-            <br>This morning I asked my friends about their morning routine…From coffee lovers to serial snoozers, from workouts to quiet tea time—everyone’s got their own way to start the day. And that’s perfect. ☀️What’s yours?
-            </p>
-          </div>
-
-          <div class="article-card">
-            <img src="/assets/journal/8.jpg"/>
-            <p class="article-date">18/08/2025</p>
-            <p>
-              Ce matin, j’ai juste pris le temps de tenir ma tasse-nuage entre mes mains. Un petit déjeuner, et un thé qui réchauffe doucement. C’est mon petit rituel du matin. Car parfois, c’est suffisant pour commencer la journée du bon pied. ☁🍵
-              <br>—
-                <br>This morning: just me, my cloud cup, and a warm tea. ☁🍵
-                </p>
+      <!-- Image carousel for multiple images -->
+      @if (content.image.length > 1) {
+        <div class="image-carousel">
+          <div class="carousel-container">
+            @for (image of content.image; track $index) {
+              <div class="carousel-slide" [class.active]="getCurrentSlideIndex(content.id) === $index">
+                <img [src]="image" alt="Article image">
               </div>
+            }
+          </div>
+          
+          <!-- Carousel navigation -->
+          @if (content.image.length > 1) {
+            <div class="carousel-controls">
+              <button (click)="prevSlide(content.id, content.image.length)" class="carousel-prev">←</button>
+              <span class="carousel-indicator">{{ getCurrentSlideIndex(content.id) + 1 }} / {{ content.image.length }}</span>
+              <button (click)="nextSlide(content.id, content.image.length)" class="carousel-next">→</button>
+            </div>
+          }
+        </div>
+      }
+      
+      <!-- Single image display -->
+      @if (content.image.length === 1 && content.image[0]) {
+        <div class="single-image">
+          <img [src]="content.image[0]" alt="Article image">
+        </div>
+      }
+      
+      <!-- Video display -->
+      @if (content.video) {
+        <div class="article-video">
+          <video width="320" controls loop>
+            <source [src]="content.video" type="video/mp4">
+          </video>
+        </div>
+      }
 
-              <div class="article-card">
-                <img src="/assets/journal/7.jpg"/>
-                <p class="article-date">17/08/2025</p>
-                <p>
-                  Aujourd’hui, je me sens comme un gigantesque nuage en peluche en liberté 🌤️✨.Joyeux dimanche à tous… et si quelqu’un veut un câlin gratuit, je suis dispo, mais attention, je ne rentre pas dans un sac à dos. 🐻💛
-                  <br>—-
-                    <br>Feeling like a giant free-roaming plush cloud today 🌤️✨Happy Sunday, everyone — free hugs available, but sorry, I don’t fit in a backpack. 🐻💛
-                    </p>
-                  </div>
-
-                  <div class="article-card">
-                    <img src="/assets/journal/6.jpg"/>
-                    <p class="article-date">16/08/2025</p>
-                    <p>
-                      ✈️ Cette année j’ai pris les devants. J’suis devenu LA valise. Comme ça, elle n’a pas le choix de m’emmener.
-                      <br>(J’fais pas de bruit et je suis moelleux, c’est une bonne affaire, non ?)
-                        <br>Et vous, vous partez où cet été ? Ou vous aussi vous vous glissez en douce dans un bagage imaginaire ? 🎒🐾
-                          <br>—-
-                            <br>This year I am the suitcase. Can’t leave me behind if I’m the luggage, right? 😎 Dream trip destination? Tell me below! 💭👇
-                            </p>
-                          </div>
-
-                          <div class="article-card">
-                            <img src="/assets/journal/5.jpg"/>
-                            <p class="article-date">15/08/2025</p>
-                            <p>
-                              Il pleuvait un peu, mais on a sorti the ukulélé quand même. Juste Maxou, moi, et une chanson douce qui sentait la mer. Je crois que parfois, c’est tout ce qu’il faut pour recommencer la semaine le cœur un peu plus léger.
-                              <br>🌿 Et vous, vous faites quoi quand tout ralentit autour de vous ?
-                                <br>——
-                                  <br>Just me, Maxou, and a ukulele in the rain. The grass was wet, the mood was light.
-                                    <br>Got a favorite rainy day song too? 🎶👇
-                                    </p>
-                                  </div>
-
-                                  <div class="article-card">
-                                    <img src="/assets/journal/4.jpg"/>
-                                    <p class="article-date">14/08/2025</p>
-                                    <p>
-                                      Quand ton cerveau te dit 🧠 : “Allez, encore un croquis…” mais ton corps a quitté le bâtiment depuis 22h30. Qui gagne chez toi le soir ? Team créativité ou team dodo ? 😵‍💫👇
-                                      <br>—-
-                                        <br>Create or collapse? Maxou chose violence. 😵‍💫🎨
-                                        </p>
-                                      </div>
-
-                                      <div class="article-card">
-                                        <ul>
-                                          <li data-accName="Item 1">
-                                            <img src="/assets/journal/3-1.jpg"/>
-                                          </li>
-                                          <li data-accName="Item 2">
-                                            <img src="/assets/journal/3-2.jpg"/>
-                                          </li>
-                                          <li data-accName="Item 3">
-                                            <img src="/assets/journal/3-3.jpg"/>
-                                          </li>
-                                        </ul>
-
-                                        <p class="article-date">13/08/2025</p>
-                                        <p>
-                                          Visite de musée ✔
-                                          <br>Contemplation existentielle ✔
-                                            <br>Donut bleu fluo en guise de conclusion artistique ? … euh ✅
-                                              <br>Myrtille dit que c’est la couleur du malaise. Moi je pense que c’est celle de la joie. Et si, au fond, l’art c’était juste un donut qui te regarde dans les yeux.
-                                                <br>🎨 Et toi, c’était quoi ton moment d’art du jour ?
-                                                  <br>———
-                                                    <br>Museum visit? Check.
-                                                      <br>Existential thoughts? Check.
-                                                        <br>A blue donut as the final masterpiece? Obviously.
-                                                          <br>What’s your unexpected art moment lately?
-                                                          </p>
-                                                        </div>
-
-                                                        <div class="article-card">
-                                                          <img src="/assets/journal/2.jpg"/>
-                                                          <p class="article-date">12/08/2025</p>
-                                                          <p>
-                                                            C’est censé être l’été… non ? Je suis toujours là, à attendre le soleil avec mon thé glacé. Et vous, vous faites quoi quand il pleut non-stop ? ☔🫖👇
-                                                            <br>——-
-                                                              <br>Is it really still summer? I’ve been waiting for the sun with my iced tea all day… Got any good rainy day ideas? 👇🌧️
-                                                              </p>
-                                                            </div>
-
-                                                            <div class="article-card">
-                                                              <img src="/assets/journal/1.jpg"/>
-                                                              <p class="article-date">11/08/2025</p>
-                                                              <p>
-                                                                Sortie bubble tea afterwork avec ma copine ! J’adore les boissons au pastèque de &#64;yifangtea.fr 💜💜 Mon préféré est le (j’arrête pas d’écorcher son nom quand je commande car il est trop longue!! 🥲) #pastèque au lait de coco et perles de sagou 🍉🧋👍Rien que pour ça, j’aime l’été ☺️
-                                                                <br>——
-                                                                  <br>Afterwork bubble tea with my partner in sip 👯‍♀️🧋 Shoutout to YiFang for the watermelon coconut milk with sago pearls 🍉🥥✨Yes, that drink with the name longer than my patience when thirsty 😅 I mess it up every time I order — but it’s my summer ride-or-die 💜
-                                                                  </p>
-                                                                </div>
-
-                                                              </div>
+      <div class="article-date">
+        <p>{{content.date}}</p>
+      </div>
+      
+      <div class="article-text">
+        <p>{{content.textFrench}}</p>
+        <p>- - -</p>
+        <p>{{content.textEnglish}}</p>
+      </div>
+    </div>
+  }
+</div>

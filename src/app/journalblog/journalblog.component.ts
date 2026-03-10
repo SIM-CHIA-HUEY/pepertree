@@ -10,42 +10,37 @@ import * as journalContent from '../../assets/content/journal-content.json';
 export class JournalblogComponent implements OnInit {
   // The ().default accesses the actual JSON content, when you import it like a module, instead of HttpClient.
   contents: any = (journalContent as any).default;
-  singleImage : boolean = false ;
-  multipleImage : boolean = false ;
-  multipleImagesArray = [];
+  
+  // Track current slide index for each content item
+  currentSlideIndices: { [key: string]: number } = {};
+
+  get reversedContents() {
+    return [...this.contents].reverse();
+  }
 
   constructor() { }
 
   ngOnInit(): void {
-    // check for each ID this.contents.image = 1 or > 1
-    // if = 1, send singleImage to html for that ID
-    // if > 1, send multipleImage to html to that ID, and send content.image to a new array for display on html
-
-    for (let i=0 ; i<this.contents.length ; i++) {
-      // console.log(this.contents[i].image.length)
-
-      if(this.contents[i].image.length == 1){
-        this.singleImage = true;
-        this.multipleImage = false;
-        this.multipleImagesArray = this.contents[i].image;
-        console.log('single?:',this.singleImage,'; multiple:',this.multipleImage)
-
-
-      } else if (this.contents[i].image.length > 1) {
-        this.singleImage = false;
-        this.multipleImage = true;
-        this.multipleImagesArray = this.contents[i].image;
-        console.log(this.multipleImagesArray)
-        console.log('single?:',this.singleImage,'; multiple:',this.multipleImage)
-
-      }
-
-      // console.log(this.contents[i].length)
-
-    }
-
-    // console.log(this.contents);
-
+    // Initialize current slide index for each content item
+    this.reversedContents.forEach((content: any) => {
+      this.currentSlideIndices[content.id] = 0;
+    });
   }
 
+  // Carousel navigation methods
+  nextSlide(contentId: string, imageCount: number): void {
+    if (this.currentSlideIndices[contentId] < imageCount - 1) {
+      this.currentSlideIndices[contentId]++;
+    }
+  }
+
+  prevSlide(contentId: string, imageCount: number): void {
+    if (this.currentSlideIndices[contentId] > 0) {
+      this.currentSlideIndices[contentId]--;
+    }
+  }
+
+  getCurrentSlideIndex(contentId: string): number {
+    return this.currentSlideIndices[contentId] || 0;
+  }
 }
