@@ -5,7 +5,7 @@ services:
   web:
     image: nginx
     volumes:
-    - ./dist:/usr/share/nginx/html
+    - ./dist/browser:/usr/share/nginx/html
 #COMMENTS ./dist/frontend above is the path to your html file.
     ports:
     - "8080:80"
