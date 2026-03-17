@@ -1,3 +1,14 @@
+.journal-component {
+    background-color: var(--turquoise);
+    top: 120px;
+    position: absolute;
+}
+@media (max-width: 702px) {
+    .journal-component {
+        top: 140px;
+    }
+}
+
 /* Carousel styles */
 .image-carousel {
   position: relative;

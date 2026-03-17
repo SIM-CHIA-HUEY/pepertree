@@ -1,57 +1,61 @@
-<div class="journal-title">
-  <h1>Notre journal</h1>
-</div>
+<div class="journal-component">
 
-<div class="articles-group">
-  @for (content of reversedContents; track content) {
-    <div class="article-card">
-      <!-- Image carousel for multiple images -->
-      @if (content.image.length > 1) {
-        <div class="image-carousel">
-          <div class="carousel-container">
-            @for (image of content.image; track $index) {
-              <div class="carousel-slide" [class.active]="getCurrentSlideIndex(content.id) === $index">
-                <img [src]="image" alt="Article image">
-              </div>
-            }
-          </div>
-          
-          <!-- Carousel navigation -->
-          @if (content.image.length > 1) {
-            <div class="carousel-controls">
-              <button (click)="prevSlide(content.id, content.image.length)" class="carousel-prev">←</button>
-              <span class="carousel-indicator">{{ getCurrentSlideIndex(content.id) + 1 }} / {{ content.image.length }}</span>
-              <button (click)="nextSlide(content.id, content.image.length)" class="carousel-next">→</button>
-            </div>
-          }
-        </div>
-      }
-      
-      <!-- Single image display -->
-      @if (content.image.length === 1 && content.image[0]) {
-        <div class="single-image">
-          <img [src]="content.image[0]" alt="Article image">
-        </div>
-      }
-      
-      <!-- Video display -->
-      @if (content.video) {
-        <div class="article-video">
-          <video width="320" controls loop>
-            <source [src]="content.video" type="video/mp4">
-          </video>
-        </div>
-      }
-
-      <div class="article-date">
-        <p>{{content.date}}</p>
-      </div>
-      
-      <div class="article-text">
-        <p>{{content.textFrench}}</p>
-        <p>- - -</p>
-        <p>{{content.textEnglish}}</p>
-      </div>
+    <div class="journal-title">
+    <h1>Notre journal</h1>
     </div>
-  }
+
+    <div class="articles-group">
+    @for (content of reversedContents; track content) {
+        <div class="article-card">
+        <!-- Image carousel for multiple images -->
+        @if (content.image.length > 1) {
+            <div class="image-carousel">
+            <div class="carousel-container">
+                @for (image of content.image; track $index) {
+                <div class="carousel-slide" [class.active]="getCurrentSlideIndex(content.id) === $index">
+                    <img [src]="image" alt="Article image">
+                </div>
+                }
+            </div>
+            
+            <!-- Carousel navigation -->
+            @if (content.image.length > 1) {
+                <div class="carousel-controls">
+                <button (click)="prevSlide(content.id, content.image.length)" class="carousel-prev">←</button>
+                <span class="carousel-indicator">{{ getCurrentSlideIndex(content.id) + 1 }} / {{ content.image.length }}</span>
+                <button (click)="nextSlide(content.id, content.image.length)" class="carousel-next">→</button>
+                </div>
+            }
+            </div>
+        }
+        
+        <!-- Single image display -->
+        @if (content.image.length === 1 && content.image[0]) {
+            <div class="single-image">
+            <img [src]="content.image[0]" alt="Article image">
+            </div>
+        }
+        
+        <!-- Video display -->
+        @if (content.video) {
+            <div class="article-video">
+            <video width="320" controls loop>
+                <source [src]="content.video" type="video/mp4">
+            </video>
+            </div>
+        }
+
+        <div class="article-date">
+            <p>{{content.date}}</p>
+        </div>
+        
+        <div class="article-text">
+            <p>{{content.textFrench}}</p>
+            <p>- - -</p>
+            <p>{{content.textEnglish}}</p>
+        </div>
+        </div>
+    }
+    </div>
+
 </div>
