@@ -578,7 +578,7 @@
         "image":[
             ""
         ],
-        "video":"",
+        "video":"/assets/journal/57.MP4",
         "date":"28/02/2026",
         "textFrench": "Myrtille cherchait de l’inspiration. On a ouvert Instagram. 2 minutes plus tard : chiens, chats, encore des chiens… Ahem. 😶 \n Résultat : zéro avancée, mais le cœur très rempli. Dis-moi… ça t’arrive aussi de venir chercher un truc et finir sur tout sauf ça ?",
         "textEnglish":"Myrtille was looking for inspiration. Opened Instagram. 2 minutes later: dogs, cats… more dogs. Ahem. 😶 Does this happen to you too?"
@@ -586,17 +586,20 @@
     },{
         "id":"58",
         "image":[
-            ""
+            "/assets/journal/58.JPG"
         ],
         "video":"",
         "date":"03/03/2026",
-        "textFrench": "Punch kun",
-        "textEnglish":""
+        "textFrench": "Ces temps-ci, Punch-kun est devenu populaire. Mais ce qui m'a vraiment attendrie, c'est cette scène : lui assis, à attendre ses humains préférés. Il y a quelque chose de rassurant dans l'attente, quand on aime. Et peut-être qu'en attendant de toucher nos rêves, on peut déjà se tenir à notre doudou.",
+        "textEnglish":"Punch-kun is popular these days, but what moved me most was him waiting for his favorite humans. Maybe while we wait to reach our dreams, we can still hold on to our comfort."
     
     },{
         "id":"59",
         "image":[
-            ""
+            "/assets/journal/59-1.jpg",
+            "/assets/journal/59-2.jpg",
+            "/assets/journal/59-3.jpg"
+    
         ],
         "video":"",
         "date":"07/03/2026",
@@ -608,7 +611,7 @@
         "image":[
             ""
         ],
-        "video":"",
+        "video":"/assets/journal/60.MP4",
         "date":"14/03/2026",
         "textFrench": "Mon amie Myrtille a un super-pouvoir : tomber amoureuse d’un nouveau hobby en 24h. Poterie, tricot, aquarelle, crochet japonais… elle regarde trois vidéos, commande tout le matériel, se projette déjà experte. \n Deux semaines plus tard ? Le kit prend la poussière. \n Trop dur. Trop long. Ou déjà remplacé par une nouvelle passion. \n Et franchement… je la comprends un peu. \n C’est quoi le dernier hobby que tu as adopté (et abandonné) ? 👀",
         "textEnglish":"My friend Myrtille falls in love with a new hobby every month. Watches a few videos, buys all the gear… \n Two weeks later? It’s collecting dust. \n Too hard. Too boring. New obsession unlocked. \n What’s the last hobby you got (a little too excited about)? 👀"
@@ -616,7 +619,7 @@
     },{
         "id":"61",
         "image":[
-            ""
+            "/assets/journal/61.JPG"
         ],
         "video":"",
         "date":"21/03/2026",
@@ -628,7 +631,7 @@
         "image":[
             ""
         ],
-        "video":"",
+        "video":"/assets/journal/62.MP4",
         "date":"28/03/2026",
         "textFrench": "Maxou était concentré. Le trait précis. L’inspiration au rendez-vous. Presqu’un chef-d’œuvre. Puis il a eu soif. Un geste simple. Prendre son verre d’eau. Boire calmement… \n Et évidemment, renverser TOUT sur le dessin. Apparemment, chez nous, même l’aquarelle se fait sans prévenir 💦 \n Est-ce que vous aussi vous avez ce talent caché pour saboter vos propres créations au dernier moment ? 👀",
         "textEnglish":"Maxou was focused. Inspired. Almost a masterpiece. \n Then he reached for his water… and poured it all over his drawing 💦 \n Please tell me you also ruin things at the worst possible moment 👀"
@@ -636,7 +639,7 @@
     },{
         "id":"63",
         "image":[
-            ""
+            "/assets/journal/63.JPG"
         ],
         "video":"",
         "date":"04/04/2026",
@@ -656,7 +659,7 @@
     },{
         "id":"65",
         "image":[
-            ""
+            "/assets/journal/65.JPG"
         ],
         "video":"",
         "date":"18/04/2026",
