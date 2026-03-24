@@ -1,7 +1,7 @@
 .journal-component {
     background-color: var(--turquoise);
     top: 120px;
-    position: absolute;
+    /* position: absolute; */
 }
 @media (max-width: 702px) {
     .journal-component {
@@ -177,4 +177,71 @@
     font-size: small;
     color: var(--turquoise);
     text-align: end;
+}
+
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.pagination-arrow {
+  background: #48317B;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.pagination-arrow:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pagination-arrow:hover:not(:disabled) {
+  background: #3a2862;
+  transform: translateY(-2px);
+}
+
+.pagination-number {
+  background: white;
+  color: #48317B;
+  border: 2px solid #48317B;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination-number:hover {
+  background: #48317B;
+  color: white;
+}
+
+.pagination-number.active {
+  background: #48317B;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive pagination */
+@media (max-width: 768px) {
+  .pagination-number {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .pagination-arrow {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
 }

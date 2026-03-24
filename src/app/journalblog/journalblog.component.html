@@ -4,8 +4,30 @@
     <h1>Notre journal</h1>
     </div>
 
+
+    <!-- Pagination Controls (Top) -->
+    <div class="pagination-controls" *ngIf="totalPages > 1">
+        <button (click)="goToFirstPage()" class="pagination-arrow" title="Première page" [disabled]="currentPage === 1">
+            ««
+        </button>
+        <button (click)="changePage(currentPage - 1)" class="pagination-arrow" title="Page précédente" [disabled]="currentPage === 1">
+            «
+        </button>
+
+        <span *ngFor="let page of pages" class="pagination-number" [class.active]="page === currentPage" (click)="changePage(page)">
+            {{ page }}
+        </span>
+
+        <button (click)="changePage(currentPage + 1)" class="pagination-arrow" title="Page suivante" [disabled]="currentPage === totalPages">
+            »
+        </button>
+        <button (click)="goToLastPage()" class="pagination-arrow" title="Dernière page" [disabled]="currentPage === totalPages">
+            »»
+        </button>
+    </div>
+
     <div class="articles-group">
-    @for (content of reversedContents; track content) {
+    @for (content of paginatedContents; track content.id) {
         <div class="article-card">
         <!-- Image carousel for multiple images -->
         @if (content.image.length > 1) {
@@ -17,25 +39,24 @@
                 </div>
                 }
             </div>
-            
-            <!-- Carousel navigation -->
-            @if (content.image.length > 1) {
-                <div class="carousel-controls">
-                <button (click)="prevSlide(content.id, content.image.length)" class="carousel-prev">←</button>
-                <span class="carousel-indicator">{{ getCurrentSlideIndex(content.id) + 1 }} / {{ content.image.length }}</span>
-                <button (click)="nextSlide(content.id, content.image.length)" class="carousel-next">→</button>
-                </div>
-            }
+
+          <!-- Carousel navigation -->
+          @if (content.image.length > 1) {
+            <div class="carousel-controls">
+              <button (click)="prevSlide(content.id, content.image.length)" class="carousel-prev">←</button>
+              <span class="carousel-indicator">{{ getCurrentSlideIndex(content.id) + 1 }} / {{ content.image.length }}</span>
+              <button (click)="nextSlide(content.id, content.image.length)" class="carousel-next">→</button>
             </div>
+          }
+        </div>
         }
-        
         <!-- Single image display -->
         @if (content.image.length === 1 && content.image[0]) {
             <div class="single-image">
             <img [src]="content.image[0]" alt="Article image">
             </div>
         }
-        
+
         <!-- Video display -->
         @if (content.video) {
             <div class="article-video">
@@ -48,7 +69,7 @@
         <div class="article-date">
             <p>{{content.date}}</p>
         </div>
-        
+
         <div class="article-text">
             <p>{{content.textFrench}}</p>
             <p>- - -</p>
@@ -56,6 +77,28 @@
         </div>
         </div>
     }
+    </div>
+
+
+    <!-- Pagination Controls (Bottom) -->
+    <div class="pagination-controls" *ngIf="totalPages > 1">
+        <button (click)="goToFirstPage()" class="pagination-arrow" title="Première page" [disabled]="currentPage === 1">
+            ««
+        </button>
+        <button (click)="changePage(currentPage - 1)" class="pagination-arrow" title="Page précédente" [disabled]="currentPage === 1">
+            «
+        </button>
+
+        <span *ngFor="let page of pages" class="pagination-number" [class.active]="page === currentPage" (click)="changePage(page)">
+            {{ page }}
+        </span>
+
+        <button (click)="changePage(currentPage + 1)" class="pagination-arrow" title="Page suivante" [disabled]="currentPage === totalPages">
+            »
+        </button>
+        <button (click)="goToLastPage()" class="pagination-arrow" title="Dernière page" [disabled]="currentPage === totalPages">
+            »»
+        </button>
     </div>
 
 </div>
