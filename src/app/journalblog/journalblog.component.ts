@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as journalContent from '../../assets/content/journal-content.json';
+import { NgZone } from '@angular/core';
 
 @Component({
     selector: 'app-journalblog',
@@ -19,7 +20,7 @@ export class JournalblogComponent implements OnInit {
   //   return [...this.contents].reverse();
   // }
 
-  constructor() { }
+  constructor(private ngZone: NgZone) { }
 
   ngOnInit(): void {
     // Initialize current slide index for each content item
@@ -59,10 +60,16 @@ export class JournalblogComponent implements OnInit {
 
   // Carousel navigation methods
   nextSlide(contentId: string, imageCount: number): void {
+  this.ngZone.runOutsideAngular(() => {
     if (this.currentSlideIndices[contentId] < imageCount - 1) {
       this.currentSlideIndices[contentId]++;
+      // Use requestAnimationFrame for smooth updates
+      requestAnimationFrame(() => {
+        // DOM updates here
+      });
     }
-  }
+  });
+}
 
   prevSlide(contentId: string, imageCount: number): void {
     if (this.currentSlideIndices[contentId] > 0) {
