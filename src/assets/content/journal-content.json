@@ -649,12 +649,12 @@
     },{
         "id":"64",
         "image":[
-            ""
+            "/assets/journal/64.jpg"
         ],
         "video":"",
         "date":"11/04/2026",
-        "textFrench": "",
-        "textEnglish":""
+        "textFrench": "Peut-être qu’on n’a pas besoin d’un plan. Juste un peu de douceur.",
+        "textEnglish":"Maybe we don’t need a plan. Just a little gentleness."
     
     },{
         "id":"65",
@@ -671,10 +671,10 @@
         "image":[
             ""
         ],
-        "video":"",
+        "video":"/assets/journal/66.MP4",
         "date":"25/04/2026",
-        "textFrench": "",
-        "textEnglish":""
+        "textFrench": "Je suis pas en retard. Je suis juste en train de respirer.",
+        "textEnglish":"I’m not behind. I’m just breathing."
     
     }
 ]
