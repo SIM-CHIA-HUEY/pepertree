@@ -6,7 +6,7 @@
 
 
     <!-- Pagination Controls (Top) -->
-    <div class="pagination-controls" *ngIf="totalPages > 1">
+    <!-- <div class="pagination-controls" *ngIf="totalPages > 1">
         <button (click)="goToFirstPage()" class="pagination-arrow" title="Première page" [disabled]="currentPage === 1">
             ««
         </button>
@@ -24,10 +24,10 @@
         <button (click)="goToLastPage()" class="pagination-arrow" title="Dernière page" [disabled]="currentPage === totalPages">
             »»
         </button>
-    </div>
+    </div> -->
 
     <div class="articles-group">
-    @for (content of paginatedContents; track content.id) {
+    @for (content of reversedContents; track content.id) {
         <div class="article-card">
         <!-- Image carousel for multiple images -->
         @if (content.image.length > 1) {
@@ -81,7 +81,7 @@
 
 
     <!-- Pagination Controls (Bottom) -->
-    <div class="pagination-controls" *ngIf="totalPages > 1">
+    <!-- <div class="pagination-controls" *ngIf="totalPages > 1">
         <button (click)="goToFirstPage()" class="pagination-arrow" title="Première page" [disabled]="currentPage === 1">
             ««
         </button>
@@ -99,6 +99,6 @@
         <button (click)="goToLastPage()" class="pagination-arrow" title="Dernière page" [disabled]="currentPage === totalPages">
             »»
         </button>
-    </div>
+    </div> -->
 
 </div>
