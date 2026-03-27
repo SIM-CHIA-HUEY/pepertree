@@ -10,20 +10,20 @@ import * as journalContent from '../../assets/content/journal-content.json';
 export class JournalblogComponent implements OnInit {
   // The ().default accesses the actual JSON content, when you import it like a module, instead of HttpClient.
   contents: any = (journalContent as any).default;
-  
-  
+  reversedContents: any[] =[];
+  currentPage = 1;
+  itemsPerPage = 9;
   // Track current slide index for each content item
   currentSlideIndices: { [key: string]: number } = {};
-
-  get reversedContents() {
-    return [...this.contents].reverse();
-  }
 
   constructor() { }
 
   ngOnInit(): void {
-    // Initialize current slide index for each content item
-    this.reversedContents.forEach((content: any) => {
+    // Create reversed version
+    this.reversedContents = [...this.contents].reverse();
+
+    // Initialize slide indices for both
+    this.contents.forEach((content: any) => {
       this.currentSlideIndices[content.id] = 0;
     });
   }
@@ -43,5 +43,25 @@ export class JournalblogComponent implements OnInit {
 
   getCurrentSlideIndex(contentId: string): number {
     return this.currentSlideIndices[contentId] || 0;
+  }
+
+  get paginatedContents() {
+    const start = (this.currentPage - 1)* this.itemsPerPage;
+    return this.reversedContents.slice (start, start + this.itemsPerPage);
+  }
+
+  get totalPages(): number {
+    return Math.ceil(this.reversedContents.length/this.itemsPerPage);
+  }
+
+  get pages(): number[] {
+    return Array(this.totalPages).fill(0).map((_, i)=> i + 1);
+  }
+
+  changePage(page: number): void {
+    if (page >= 1 && page <= this.totalPages) {
+      this.currentPage = page;
+      window.scrollTo(0, 0);
+    }
   }
 }
