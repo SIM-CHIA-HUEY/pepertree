@@ -43,8 +43,8 @@ The app will automatically reload if you change any source files.
 
 To build the project for production:
 ```
-ng build
+ng build --configuration production
+npx serve -s dist/browser
 ```
-The output will be in the dist/ directory.
 
 ---
