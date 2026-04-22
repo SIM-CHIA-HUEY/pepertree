@@ -2,7 +2,7 @@
     {
         "id":"1",
         "image":[
-            "/assets/journal/1.jpg"
+            "assets/journal/1.jpg"
         ],
         "video":"",
         "date":"18/06/2025",
@@ -11,7 +11,7 @@
     },{
         "id":"2",
         "image":[
-            "/assets/journal/2.jpg"
+            "assets/journal/2.jpg"
         ],
         "video":"",
         "date":"07/07/2025",
