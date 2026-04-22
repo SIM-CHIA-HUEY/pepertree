@@ -20,9 +20,9 @@
     },{
         "id":"3",
         "image":[
-            "/assets/journal/3-1.jpg",
-            "/assets/journal/3-2.jpg",
-            "/assets/journal/3-3.jpg"
+            "assets/journal/3-1.jpg",
+            "assets/journal/3-2.jpg",
+            "assets/journal/3-3.jpg"
         ],
         "video":"",
         "date":"14/07/2025",
@@ -31,7 +31,7 @@
     },{
         "id":"4",
         "image":[
-            "/assets/journal/4.jpg"
+            "assets/journal/4.jpg"
         ],
         "video":"",
         "date":"19/07/2025",
@@ -41,7 +41,7 @@
     },{
         "id":"5",
         "image":[
-            "/assets/journal/5.jpg"
+            "assets/journal/5.jpg"
         ],
         "video":"",
         "date":"20/07/2025",
@@ -51,7 +51,7 @@
     },{
         "id":"6",
         "image":[
-            "/assets/journal/6.jpg"
+            "assets/journal/6.jpg"
         ],
         "video":"",
         "date":"28/07/2025",
@@ -61,7 +61,7 @@
     },{
         "id":"7",
         "image":[
-            "/assets/journal/7.jpg"
+            "assets/journal/7.jpg"
         ],
         "video":"",
         "date":"17/08/2025",
@@ -71,7 +71,7 @@
     },{
         "id":"8",
         "image":[
-            "/assets/journal/8.jpg"
+            "assets/journal/8.jpg"
         ],
         "video":"",
         "date":"18/08/2025",
@@ -83,7 +83,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/9.mp4",
+        "video":"assets/journal/9.mp4",
         "date":"19/08/2025",
         "textFrench": "Ce matin, j’ai demandé à mes amis quelle était leur routine… et j’ai eu des réponses très… variées.L’un ne jure que par son café, l’autre médite 20 minutes, un autre fait du sport… et puis il y a celui qui se rendort trois fois (devinez qui 🙈). \n Et moi ? Je crois que j’aime juste commencer la journée avec mon petit thé nuage et un moment calme.On a tous notre manière de se réveiller, et c’est parfait comme ça. ☀️ \n Et toi, c’est quoi ta routine du matin ?",
         "textEnglish":"This morning I asked my friends about their morning routine…From coffee lovers to serial snoozers, from workouts to quiet tea time—everyone’s got their own way to start the day. And that’s perfect. ☀️What’s yours?"
@@ -93,7 +93,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/10.mp4",
+        "video":"assets/journal/10.mp4",
         "date":"20/08/2025",
         "textFrench": "Récemment, j’ai lu une phrase qui m’a profondément touché : “Je suis responsable de ce que je ressens, pense, fais et dis.” 🌿 Depuis, j’essaie, au fil de la journée, de nommer mes émotions au moment où elles arrivent. Ce n’est pas toujours simple, parfois c’est confus, mais apprendre à les reconnaître m’aide à mieux comprendre ce que je vis et à choisir mes réactions. Et toi, comment tu fais pour identifier tes émotions ? As-tu des astuces à partager ? ",
         "textEnglish":"I recently read : “I’m responsible for what I feel, think, do, and say.” So from now on, I try to name my emotions as they come. How do you identify your feelings?"
@@ -103,7 +103,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/11.mp4",
+        "video":"assets/journal/11.mp4",
         "date":"21/08/2025",
         "textFrench": "Bienvenue au Café des Moods de Péper ☕✨ \n 7 humeurs, 7 boissons bizarres :🌿 Calme \n 🔥 Déterminé  \n 🌸 Amoureux  \n … et plein d’autres ! Et toi… si ton mood était une boisson, ce serait quoi ? 🍹✨",
         "textEnglish":"Welcome to Péper’s Mood Café ☕✨ \n 7 moods, 7 weird drinks: \n Calm → laughing leaf tea \n Stressed → espresso with tiny lightning \n Determined → chili-raspberry milkshake \n In love → dancing rose petal cocoa \n Playful → tickly bubble sodaT \n ired → grey cloud infusion \n Inspired → sparkling firefly juice \n If your mood was a drink… what would it be? 🍹✨"
@@ -111,12 +111,12 @@
     },{
         "id":"12",
         "image":[
-            "/assets/journal/12-1.jpg",
-            "/assets/journal/12-2.jpg",
-            "/assets/journal/12-3.jpg",
-            "/assets/journal/12-4.jpg",
-            "/assets/journal/12-5.jpg",
-            "/assets/journal/12-6.jpg"
+            "assets/journal/12-1.jpg",
+            "assets/journal/12-2.jpg",
+            "assets/journal/12-3.jpg",
+            "assets/journal/12-4.jpg",
+            "assets/journal/12-5.jpg",
+            "assets/journal/12-6.jpg"
         ],
         "video":"",
         "date":"22/08/2025",
@@ -126,7 +126,7 @@
     },{
         "id":"13",
         "image":[
-            "/assets/journal/13.jpg"
+            "assets/journal/13.jpg"
         ],
         "video":"",
         "date":"23/08/2025",
@@ -137,7 +137,7 @@
     },{
         "id":"14",
         "image":[
-            "/assets/journal/14.jpg"
+            "assets/journal/14.jpg"
         ],
         "video":"",
         "date":"25/08/2025",
@@ -149,7 +149,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/15.mp4",
+        "video":"assets/journal/15.mp4",
         "date":"26/08/2025",
         "textFrench": "Je voulais juste dire « non »… tout doucement. Mais mes mots ont trébuché, et c’est sorti comme un rugissement un peu tordu. 🐅 J’ai vu les yeux en face s’écarquiller, et moi… je voulais juste disparaître.\n Je crois que parfois, mes émotions passent avant mes phrases.Alors j’essaie d’apprendre… à respirer, à trouver les bons mots, même quand mon cœur s’emballe. \n Et toi… ça t’est déjà arrivé de dire les choses tout de travers ?",
         "textEnglish": "I meant to say “no” softly, but it came out all wrong… 🐅 Ever had your words trip over your feelings?"
@@ -157,7 +157,7 @@
     },{
         "id":"16",
         "image":[
-            "/assets/journal/16.jpg"
+            "assets/journal/16.jpg"
         ],
         "video":"",
         "date":"27/08/2025",
@@ -167,7 +167,7 @@
     },{
         "id":"17",
         "image":[
-            "/assets/journal/17.jpg"
+            "assets/journal/17.jpg"
         ],
         "video":"",
         "date":"28/08/2025",
@@ -177,7 +177,7 @@
     },{
         "id":"18",
         "image":[
-            "/assets/journal/18.jpg"
+            "assets/journal/18.jpg"
         ],
         "video":"",
         "date":"29/08/2025",
@@ -187,10 +187,10 @@
     },{
         "id":"19",
         "image":[
-            "/assets/journal/19-1.jpg",
-            "/assets/journal/19-2.jpg",
-            "/assets/journal/19-3.jpg",
-            "/assets/journal/19-4.jpg"
+            "assets/journal/19-1.jpg",
+            "assets/journal/19-2.jpg",
+            "assets/journal/19-3.jpg",
+            "assets/journal/19-4.jpg"
         ],
         "video":"",
         "date":"01/09/2025",
@@ -200,7 +200,7 @@
     },{
         "id":"20",
         "image":[
-            "/assets/journal/20.jpg"
+            "assets/journal/20.jpg"
         ],
         "video":"",
         "date":"01/09/2025",
@@ -210,7 +210,7 @@
     },{
         "id":"21",
         "image":[
-            "/assets/journal/21.jpg"
+            "assets/journal/21.jpg"
         ],
         "video":"",
         "date":"02/09/2025",
@@ -222,7 +222,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/22.mp4",
+        "video":"assets/journal/22.mp4",
         "date":"03/09/2025",
         "textFrench": "Après une longue journée pas facile, je n’avais besoin que d’une chose : mon doudou. Pas pour fuir, juste pour respirer un peu mieux.Et toi… c’est quoi qui te console dans ces moments-là ? 🎐🌧️",
         "textEnglish":"Bad day? I found my soft rescue. 💭🧸 What’s your comfort item when everything feels too much?"
@@ -230,7 +230,7 @@
     },{
         "id":"23",
         "image":[
-            "/assets/journal/23.jpg"
+            "assets/journal/23.jpg"
         ],
         "video":"",
         "date":"04/09/2025",
@@ -240,7 +240,7 @@
     },{
         "id":"24",
         "image":[
-            "/assets/journal/24.jpg"
+            "assets/journal/24.jpg"
         ],
         "video":"",
         "date":"05/09/2025",
@@ -250,8 +250,8 @@
     },{
         "id":"25",
         "image":[
-            "/assets/journal/25-1.jpg",
-            "/assets/journal/25-2.jpg"
+            "assets/journal/25-1.jpg",
+            "assets/journal/25-2.jpg"
         ],
         "video":"",
         "date":"08/09/2025",
@@ -261,7 +261,7 @@
     },{
         "id":"26",
         "image":[
-            "/assets/journal/26.jpg"
+            "assets/journal/26.jpg"
         ],
         "video":"",
         "date":"14/09/2025",
@@ -271,7 +271,7 @@
     },{
         "id":"27",
         "image":[
-            "/assets/journal/27.jpg"
+            "assets/journal/27.jpg"
         ],
         "video":"",
         "date":"20/12/2025",
@@ -283,7 +283,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/28.mp4",
+        "video":"assets/journal/28.mp4",
         "date":"21/09/2025",
         "textFrench": "Mon dimanche parfait ?Me lever à midi parce que le sommeil, c’est gratuit.Manger des pancakes jusqu’à ce que la gravité commence à me tirer vers le sol.Parler à un pigeon (il s’appelle Gérard).Adopter un nuage pour l’après-midi.Siester si fort que je me réveille dans un autre fuseau horaire.Et finir par regarder une série jusqu’à ce que Netflix me demande si je suis encore en vie. \n Bref… bonheur.Et toi, ton dimanche parfait, il ressemble à quoi ? 🌤️✨",
         "textEnglish":"Perfect Sunday? Sleep till noon, pancakes overdose, chat with a pigeon, adopt a cloud, nap like I time-traveled, binge till Netflix checks if I’m alive.What’s yours?"
@@ -291,7 +291,7 @@
     },{
         "id":"29",
         "image":[
-            "/assets/journal/29.jpg"
+            "assets/journal/29.jpg"
         ],
         "video":"",
         "date":"25/09/2025",
@@ -301,9 +301,9 @@
     },{
         "id":"30",
         "image":[
-            "/assets/journal/30-1.jpg",
-            "/assets/journal/30-2.jpg",
-            "/assets/journal/30-3.jpg"
+            "assets/journal/30-1.jpg",
+            "assets/journal/30-2.jpg",
+            "assets/journal/30-3.jpg"
 
         ],
         "video":"",
@@ -316,7 +316,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/31.mp4",
+        "video":"assets/journal/31.mp4",
         "date":"05/10/2025",
         "textFrench": "Ce mois-ci, l’équipe Péper Tree s’est déguisée pour Halloween : Draculapin 🦇🐰, Jack-o-chat 🎃🐱, Bou-ours 👻🐻, veuve noire 🕷️, chat-yeti ❄️🐱, mage-hibou 🦉✨, licorne bonbons 🍬🦄 et bien sûr un·e sorcier·ère 🪄.Alors, dis-moi… quel octobre es-tu ? 👀",
         "textEnglish":"This October, we turned into Draculapin, Jack-o-Cat, Boo-Bear, Candy Unicorn & more 🎃✨ So tell me… which October are you? 👀"
@@ -324,7 +324,7 @@
     },{
         "id":"32",
         "image":[
-            "/assets/journal/32.jpg"
+            "assets/journal/32.jpg"
         ],
         "video":"",
         "date":"06/10/2025",
@@ -336,7 +336,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/33.MP4",
+        "video":"assets/journal/33.MP4",
         "date":"14/10/2025",
         "textFrench": "Je suis allée voir mon amie Mellow, magicienne dans son temps libre ✨🍂 avec qui j’ai appris à remplir cette saison de pluie avec de la magie et des petits sorts.",
         "textEnglish":"Met up with my friend Mellow, a part-time magician ✨🍂 She reminded me: autumn isn’t just grey, it can be magic."
@@ -344,7 +344,7 @@
     },{
         "id":"34",
         "image":[
-            "/assets/journal/34.jpg"
+            "assets/journal/34.jpg"
         ],
         "video":"",
         "date":"22/10/2025",
@@ -354,7 +354,7 @@
     },{
         "id":"35",
         "image":[
-            "/assets/journal/35.jpg"
+            "assets/journal/35.jpg"
         ],
         "video":"",
         "date":"30/10/2025",
@@ -366,7 +366,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/36.MP4",
+        "video":"assets/journal/36.MP4",
         "date":"08/11/2025",
         "textFrench": "Tu connais ces moments où tu es tellement concentré·e que tu oublies d’allumer la lumière ? 🌙 C’est ce qui m’est arrivé hier soir… jusqu’à ce que Myrtille me sauve de ma grotte obscure 🤭 Merci Myrtille 💜 Et toi, tu travailles dans le noir ou la lumière ?",
         "textEnglish":"Ever been so focused you forget to turn on the light? 🌙 That was me… until Myrtille saved me ✨."
@@ -374,7 +374,7 @@
     },{
         "id":"37",
         "image":[
-            "/assets/journal/37.jpg"
+            "assets/journal/37.jpg"
         ],
         "video":"",
         "date":"15/11/2025",
@@ -384,7 +384,7 @@
     },{
         "id":"38",
         "image":[
-            "/assets/journal/38.jpg"
+            "assets/journal/38.jpg"
         ],
         "video":"",
         "date":"17/11/2025",
@@ -395,7 +395,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/39.MP4",
+        "video":"assets/journal/39.MP4",
         "date":"23/11/2025",
          "textFrench": "On dit que flâner, ce n’est pas acheter… J’adore me promener dans les boutiques, sentir les ambiances, regarder les jolies choses — c’est mon petit rituel pour me détendre et trouver l’inspiration 🌷Le seul hic, c’est que “juste flâner” finit souvent en “juste un sac (ou deux)” 🙃 💸 Et toi, t’arrives à te contrôler… ou tu craques à chaque fois comme moi ? 👀🛍️",
         "textEnglish":"They say browsing isn’t buying… And yet, my subconscious disagrees. Do you window-shop or always end up with a bag (or two)? "
@@ -403,7 +403,7 @@
     },{
         "id":"40",
         "image":[
-            "/assets/journal/40.jpg"
+            "assets/journal/40.jpg"
         ],
         "video":"",
         "date":"29/11/2025",
@@ -415,7 +415,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/41.MP4",
+        "video":"assets/journal/41.MP4",
         "date":"06/12/2025",
         "textFrench": "Quand le froid revient, Bobby ressort toujours son petit doudou préféré 🐻 : sa Robe De Chambre tout doux, tout chaud ✨ Et toi, c’est quoi ton doudou qui t’accompagne en ces temps gris et froids ? ☕💛",
         "textEnglish":"Cold days = Bathrobe as Binky 🧸✨ to keep warm. What’s your comfort buddy when it gets chilly?"
@@ -425,7 +425,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/42.MP4",
+        "video":"assets/journal/42.MP4",
         "date":"13/12/2025",
         "textFrench": "Ce week-end, je vais faire un choix super difficile 😭 :Team Chill ? Team Créatif ? Team Cocoon ? Ou Team Social ?J’hésite encore…👀💛 Peut-être un mélange entre plaid, dessins ratés, thé chaud et papotage avec un ami qui arrive en retard (comme toujours). Dis-moi ton pack du week-end en commentaire 🤭✨Et si tu ne me suis pas encore… viens par ici pour encore plus de vibes cute & cosy 🌿💕",
         "textEnglish":"Weekend mode: Chill, Creative, Cocoon, or Social?Which pack are you picking? 👀✨Tell me in the comments — and follow for more cute & cosy vibes 💛🌿"
@@ -433,7 +433,7 @@
     },{
         "id":"43",
         "image":[
-            "/assets/journal/43.jpg"
+            "assets/journal/43.jpg"
         ],
         "video":"",
         "date":"20/12/2025",
@@ -443,8 +443,8 @@
     },{
         "id":"44",
         "image":[
-            "/assets/journal/44-1.jpg",
-            "/assets/journal/44-2.jpg"
+            "assets/journal/44-1.jpg",
+            "assets/journal/44-2.jpg"
         ],
         "video":"",
         "date":"24/12/2025",
@@ -454,8 +454,8 @@
     },{
         "id":"45",
         "image":[
-            "/assets/journal/45-1.jpg",
-            "/assets/journal/45-2.jpg"
+            "assets/journal/45-1.jpg",
+            "assets/journal/45-2.jpg"
         ],
         "video":"",
         "date":"28/12/2025",
@@ -465,7 +465,7 @@
     },{
         "id":"46",
         "image":[
-            "/assets/journal/46.jpg"
+            "assets/journal/46.jpg"
         ],
         "video":"",
         "date":"03/01/2026",
@@ -475,7 +475,7 @@
     },{
         "id":"47",
         "image":[
-            "/assets/journal/47.jpg"
+            "assets/journal/47.jpg"
         ],
         "video":"",
         "date":"04/01/2026",
@@ -487,7 +487,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/48.MP4",
+        "video":"assets/journal/48.MP4",
         "date":"10/01/2026",
         "textFrench": "J’ai essayé de méditer avec Maxou… sauf que… au bout de 2 minutes, monsieur a glissé dans le médit-dodo 😂✨ Un petit ronflement zen, et hop, l’illumination version sieste. \n Franchement, je peux même pas lui en vouloir : chacun sa manière d’atteindre la paix intérieure 😭💛 \n Et toi, c’est quoi ton style de méditation ? Dis-moi en commentaire : \n 1️⃣ L’illuminé qui respire super bien \n 2️⃣ Le penseur qui pense à ses courses \n 3️⃣ Le méditateur qui gigote \n 4️⃣ Le philosophe qui regarde le plafond \n 5️⃣ Le Maxou… qui s’endort 😴",
         "textEnglish":"Tried meditating with Maxou today… he fell asleep after 2 minutes 😭🧘‍♂️💛 Honestly, iconic. \n Which meditation style are you?"
@@ -495,7 +495,7 @@
     },{
         "id":"49",
         "image":[
-            "/assets/journal/49.jpg"
+            "assets/journal/49.jpg"
         ],
         "video":"",
         "date":"17/01/2026",
@@ -507,7 +507,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/50.MP4",
+        "video":"assets/journal/50.MP4",
         "date":"24/01/2026",
         "textFrench": "Cette semaine, j’ai envie de la voir en couleurs. Si ta semaine était une teinte, elle serait laquelle ? \n Abricot doux \n Bleu ultramarine profond  \n Rose pâle qui rassure  \n Bleu-violet flashy plein d’énergie  \n Jaune lumineux \n Vert tranquille \n Marron cosy \n Rouge passion ? 🎨✨",
         "textEnglish":"If your week had a color, what would it be? Apricot, ultramarine, pale pink, neon purple, yellow, green, brown, red… or something totally your own? 🎨✨"
@@ -517,7 +517,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/51.MP4",
+        "video":"assets/journal/51.MP4",
         "date":"31/01/2026",
         "textFrench": "Aujourd’hui, mon cerveau voulait absolument que je “fasse quelque chose”. Mon corps, lui, a décidé que fixer une feuille blanche pendant 3 heures était déjà une activité à part entière. Résultat : moi, immobile, en plein duel silencieux entre motivation et inertie… 😌🧠💭 \n Je crois qu’on a tous ces jours-là où l’on veut avancer, mais où rien ne bouge vraiment. Alors je respire, je me pardonne, et j’essaie de faire confiance au rythme du moment. Même si ce rythme ressemble à… regarder le vide.",
         "textEnglish":"Today my brain wanted me to “be productive”. My body decided that staring at a blank page for 3 hours was enough productivity. So here I am, stuck between motivation and stillness… 😌💭 \n Some days are just slow. I’m learning to breathe, forgive myself, and trust the pace — even when the pace is… staring at nothing."
@@ -527,7 +527,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/52.MP4",
+        "video":"assets/journal/52.MP4",
         "date":"02/02/2026",
         "textFrench": "Bonne Chandeleur à tous 🥞✨ \n Aujourd’hui, Mimi s’est lancée dans la cuisson des crêpes avec beaucoup d’enthousiasme… et un peu trop de confiance 😌 \n Résultat : une crêpe, un envol majestueux, et un atterrissage direct au plafond. \n Comme quoi, l’important ce n’est pas la réussite… mais la bonne humeur 😆💛 \n 👉 Team crêpes parfaites ou team crêpes catastrophes ? ",
         "textEnglish":"Happy Chandeleur 🥞✨ Mimi tried to flip a crêpe with confidence… it ended up on the ceiling 😆 \n Perfection is overrated — fun is not 💛 \n Are you team perfect crêpes or total fail?"
@@ -535,7 +535,7 @@
     },{
         "id":"53",
         "image":[
-            "/assets/journal/53.jpg"
+            "assets/journal/53.jpg"
         ],
         "video":"",
         "date":"07/02/2026",
@@ -545,7 +545,7 @@
     },{
         "id":"54",
         "image":[
-            "/assets/journal/54.PNG"
+            "assets/journal/54.PNG"
         ],
         "video":"",
         "date":"14/02/2026",
@@ -557,7 +557,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/55.mov",
+        "video":"assets/journal/55.mov",
         "date":"17/02/2026",
         "textFrench": "Bonne année lunaire du Cheval à tous 🐎🧧✨ \n Aujourd’hui, Danelane voulait vous souhaiter ça dans les règles de l’art… avec pétards, bonne humeur et beaucoup trop de fumée 😌 que cette nouvelle année soit pleine d’énergie, de courage et de jolis départs ❤️ \n 👉 Vous êtes plutôt team pétards à fond ou team célébration tranquille à la maison ? ",
         "textEnglish":"Happy Lunar New Year of the Horse 🐎🧧✨ \n Danelane tried to celebrate with fireworks… ended up coughing in the smoke 😂 Wishing you a year full of energy and fresh starts ❤️ \n Are you team fireworks or cozy home celebrations?"
@@ -565,8 +565,8 @@
     },{
         "id":"56",
         "image":[
-            "/assets/journal/56-1.jpg",
-            "/assets/journal/56-2.jpg"
+            "assets/journal/56-1.jpg",
+            "assets/journal/56-2.jpg"
         ],
         "video":"",
         "date":"21/02/2026",
@@ -578,7 +578,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/57.MP4",
+        "video":"assets/journal/57.MP4",
         "date":"28/02/2026",
         "textFrench": "Myrtille cherchait de l’inspiration. On a ouvert Instagram. 2 minutes plus tard : chiens, chats, encore des chiens… Ahem. 😶 \n Résultat : zéro avancée, mais le cœur très rempli. Dis-moi… ça t’arrive aussi de venir chercher un truc et finir sur tout sauf ça ?",
         "textEnglish":"Myrtille was looking for inspiration. Opened Instagram. 2 minutes later: dogs, cats… more dogs. Ahem. 😶 Does this happen to you too?"
@@ -586,7 +586,7 @@
     },{
         "id":"58",
         "image":[
-            "/assets/journal/58.jpg"
+            "assets/journal/58.jpg"
         ],
         "video":"",
         "date":"03/03/2026",
@@ -596,9 +596,9 @@
     },{
         "id":"59",
         "image":[
-            "/assets/journal/59-1.jpg",
-            "/assets/journal/59-2.jpg",
-            "/assets/journal/59-3.jpg"
+            "assets/journal/59-1.jpg",
+            "assets/journal/59-2.jpg",
+            "assets/journal/59-3.jpg"
     
         ],
         "video":"",
@@ -611,7 +611,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/60.MP4",
+        "video":"assets/journal/60.MP4",
         "date":"14/03/2026",
         "textFrench": "Mon amie Myrtille a un super-pouvoir : tomber amoureuse d’un nouveau hobby en 24h. Poterie, tricot, aquarelle, crochet japonais… elle regarde trois vidéos, commande tout le matériel, se projette déjà experte. \n Deux semaines plus tard ? Le kit prend la poussière. \n Trop dur. Trop long. Ou déjà remplacé par une nouvelle passion. \n Et franchement… je la comprends un peu. \n C’est quoi le dernier hobby que tu as adopté (et abandonné) ? 👀",
         "textEnglish":"My friend Myrtille falls in love with a new hobby every month. Watches a few videos, buys all the gear… \n Two weeks later? It’s collecting dust. \n Too hard. Too boring. New obsession unlocked. \n What’s the last hobby you got (a little too excited about)? 👀"
@@ -619,7 +619,7 @@
     },{
         "id":"61",
         "image":[
-            "/assets/journal/61.jpg"
+            "assets/journal/61.jpg"
         ],
         "video":"",
         "date":"21/03/2026",
@@ -631,7 +631,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/62.MP4",
+        "video":"assets/journal/62.MP4",
         "date":"28/03/2026",
         "textFrench": "Maxou était concentré. Le trait précis. L’inspiration au rendez-vous. Presqu’un chef-d’œuvre. Puis il a eu soif. Un geste simple. Prendre son verre d’eau. Boire calmement… \n Et évidemment, renverser TOUT sur le dessin. Apparemment, chez nous, même l’aquarelle se fait sans prévenir 💦 \n Est-ce que vous aussi vous avez ce talent caché pour saboter vos propres créations au dernier moment ? 👀",
         "textEnglish":"Maxou was focused. Inspired. Almost a masterpiece. \n Then he reached for his water… and poured it all over his drawing 💦 \n Please tell me you also ruin things at the worst possible moment 👀"
@@ -639,7 +639,7 @@
     },{
         "id":"63",
         "image":[
-            "/assets/journal/63.jpg"
+            "assets/journal/63.jpg"
         ],
         "video":"",
         "date":"04/04/2026",
@@ -649,7 +649,7 @@
     },{
         "id":"64",
         "image":[
-            "/assets/journal/64.jpg"
+            "assets/journal/64.jpg"
         ],
         "video":"",
         "date":"11/04/2026",
@@ -659,7 +659,7 @@
     },{
         "id":"65",
         "image":[
-            "/assets/journal/65.jpg"
+            "assets/journal/65.jpg"
         ],
         "video":"",
         "date":"18/04/2026",
@@ -671,7 +671,7 @@
         "image":[
             ""
         ],
-        "video":"/assets/journal/66.MP4",
+        "video":"assets/journal/66.MP4",
         "date":"25/04/2026",
         "textFrench": "Je suis pas en retard. Je suis juste en train de respirer.",
         "textEnglish":"I’m not behind. I’m just breathing."

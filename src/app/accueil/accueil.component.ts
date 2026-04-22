@@ -32,25 +32,25 @@ export class AccueilComponent implements OnInit {
       {
         id: "MY01",
         name: "Sticker autocollant Holographique de Myrtille Concentré MY01",
-        image: "/assets/MyrtilleConcentre_de_PerperTree-1.jpg",
+        image: "assets/MyrtilleConcentre_de_PerperTree-1.jpg",
         price: "3.50",
       },
       {
         id: "MA02",
         name: "Sticker autocollant Transparent de Maxou en Dino MA01",
-        image: "/assets/MaxouCosplay-PeperTree.jpg",
+        image: "assets/MaxouCosplay-PeperTree.jpg",
         price: "3.20",
       },
       {
         id: "ME01",
         name: "Sticker autocollant Transparent de Mellow dans son chaudron ME01",
-        image: "/assets/MellowCachee-Pepertree.jpg",
+        image: "assets/MellowCachee-Pepertree.jpg",
         price: "1.50",
       },
       {
         id: "PO01",
         name: "Sticker autocollant Scintillant de Pouette pour Noël PO01",
-        image: "/assets/PouetteNoel-PeperTree.jpg",
+        image: "assets/PouetteNoel-PeperTree.jpg",
         price: "3.20",
       },
     ];
