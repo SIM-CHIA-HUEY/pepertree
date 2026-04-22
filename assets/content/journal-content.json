@@ -1,0 +1,680 @@
+[
+    {
+        "id":"1",
+        "image":[
+            "/assets/journal/1.jpg"
+        ],
+        "video":"",
+        "date":"18/06/2025",
+        "textFrench": "Sortie bubble tea afterwork avec ma copine ! J’adore les boissons au pastèque de @yifangtea.fr 💜💜 Mon préféré est le (j’arrête pas d’écorcher son nom quand je commande car il est trop longue!! 🥲) #pastèque au lait de coco et perles de sagou 🍉🧋👍Rien que pour ça, j’aime l’été ☺️",
+        "textEnglish":"Afterwork bubble tea with my partner in sip 👯‍♀️🧋 Shoutout to YiFang for the watermelon coconut milk with sago pearls 🍉🥥✨Yes, that drink with the name longer than my patience when thirsty 😅 I mess it up every time I order — but it’s my summer ride-or-die 💜"
+    },{
+        "id":"2",
+        "image":[
+            "/assets/journal/2.jpg"
+        ],
+        "video":"",
+        "date":"07/07/2025",
+        "textFrench": "C’est censé être l’été… non ? Je suis toujours là, à attendre le soleil avec mon thé glacé. Et vous, vous faites quoi quand il pleut non-stop ? ☔🫖👇",
+        "textEnglish":"Is it really still summer? I’ve been waiting for the sun with my iced tea all day… Got any good rainy day ideas? 👇🌧️"   
+    },{
+        "id":"3",
+        "image":[
+            "/assets/journal/3-1.jpg",
+            "/assets/journal/3-2.jpg",
+            "/assets/journal/3-3.jpg"
+        ],
+        "video":"",
+        "date":"14/07/2025",
+        "textFrench": "Visite de musée ✔ \n Contemplation existentielle ✔ \n Donut bleu fluo en guise de conclusion artistique ? … euh ✅ \n Myrtille dit que c’est la couleur du malaise. Moi je pense que c’est celle de la joie. Et si, au fond, l’art c’était juste un donut qui te regarde dans les yeux. \n 🎨 Et toi, c’était quoi ton moment d’art du jour ?",
+        "textEnglish":"Museum visit? ✔ \n Existential thoughts? ✔ \n A blue donut as the final masterpiece? Obviously. \n What’s your unexpected art moment lately?"
+    },{
+        "id":"4",
+        "image":[
+            "/assets/journal/4.jpg"
+        ],
+        "video":"",
+        "date":"19/07/2025",
+        "textFrench": "Quand ton cerveau te dit 🧠 : “Allez, encore un croquis…” mais ton corps a quitté le bâtiment depuis 22h30. Qui gagne chez toi le soir ? Team créativité ou team dodo ? 😵‍💫👇",
+        "textEnglish":"Create or collapse? Maxou chose violence. 😵‍💫🎨"
+       
+    },{
+        "id":"5",
+        "image":[
+            "/assets/journal/5.jpg"
+        ],
+        "video":"",
+        "date":"20/07/2025",
+        "textFrench": "Il pleuvait un peu, mais on a sorti the ukulélé quand même. Juste Maxou, moi, et une chanson douce qui sentait la mer. Je crois que parfois, c’est tout ce qu’il faut pour recommencer la semaine le cœur un peu plus léger. \n 🌿 Et vous, vous faites quoi quand tout ralentit autour de vous ?",
+        "textEnglish":"Just me, Maxou, and a ukulele in the rain. The grass was wet, the mood was light. \n Got a favorite rainy day song too? 🎶👇"
+       
+    },{
+        "id":"6",
+        "image":[
+            "/assets/journal/6.jpg"
+        ],
+        "video":"",
+        "date":"28/07/2025",
+        "textFrench": "✈️ Cette année j’ai pris les devants. J’suis devenu LA valise. Comme ça, elle n’a pas le choix de m’emmener. \n (J’fais pas de bruit et je suis moelleux, c’est une bonne affaire, non ?) \n Et vous, vous partez où cet été ? Ou vous aussi vous vous glissez en douce dans un bagage imaginaire ? 🎒🐾",
+        "textEnglish":"This year I am the suitcase. Can’t leave me behind if I’m the luggage, right? 😎 Dream trip destination? Tell me below! 💭👇"
+       
+    },{
+        "id":"7",
+        "image":[
+            "/assets/journal/7.jpg"
+        ],
+        "video":"",
+        "date":"17/08/2025",
+        "textFrench": "Aujourd’hui, je me sens comme un gigantesque nuage en peluche en liberté 🌤️✨.Joyeux dimanche à tous… et si quelqu’un veut un câlin gratuit, je suis dispo, mais attention, je ne rentre pas dans un sac à dos. 🐻💛",
+        "textEnglish":"Feeling like a giant free-roaming plush cloud today 🌤️✨Happy Sunday, everyone — free hugs available, but sorry, I don’t fit in a backpack. 🐻💛"
+       
+    },{
+        "id":"8",
+        "image":[
+            "/assets/journal/8.jpg"
+        ],
+        "video":"",
+        "date":"18/08/2025",
+        "textFrench": "Ce matin, j’ai juste pris le temps de tenir ma tasse-nuage entre mes mains. Un petit déjeuner, et un thé qui réchauffe doucement. C’est mon petit rituel du matin. Car parfois, c’est suffisant pour commencer la journée du bon pied. ☁🍵",
+        "textEnglish":"This morning: just me, my cloud cup, and a warm tea. ☁🍵"
+       
+    },{
+        "id":"9",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/9.mp4",
+        "date":"19/08/2025",
+        "textFrench": "Ce matin, j’ai demandé à mes amis quelle était leur routine… et j’ai eu des réponses très… variées.L’un ne jure que par son café, l’autre médite 20 minutes, un autre fait du sport… et puis il y a celui qui se rendort trois fois (devinez qui 🙈). \n Et moi ? Je crois que j’aime juste commencer la journée avec mon petit thé nuage et un moment calme.On a tous notre manière de se réveiller, et c’est parfait comme ça. ☀️ \n Et toi, c’est quoi ta routine du matin ?",
+        "textEnglish":"This morning I asked my friends about their morning routine…From coffee lovers to serial snoozers, from workouts to quiet tea time—everyone’s got their own way to start the day. And that’s perfect. ☀️What’s yours?"
+       
+    },{
+        "id":"10",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/10.mp4",
+        "date":"20/08/2025",
+        "textFrench": "Récemment, j’ai lu une phrase qui m’a profondément touché : “Je suis responsable de ce que je ressens, pense, fais et dis.” 🌿 Depuis, j’essaie, au fil de la journée, de nommer mes émotions au moment où elles arrivent. Ce n’est pas toujours simple, parfois c’est confus, mais apprendre à les reconnaître m’aide à mieux comprendre ce que je vis et à choisir mes réactions. Et toi, comment tu fais pour identifier tes émotions ? As-tu des astuces à partager ? ",
+        "textEnglish":"I recently read : “I’m responsible for what I feel, think, do, and say.” So from now on, I try to name my emotions as they come. How do you identify your feelings?"
+       
+    },{
+        "id":"11",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/11.mp4",
+        "date":"21/08/2025",
+        "textFrench": "Bienvenue au Café des Moods de Péper ☕✨ \n 7 humeurs, 7 boissons bizarres :🌿 Calme \n 🔥 Déterminé  \n 🌸 Amoureux  \n … et plein d’autres ! Et toi… si ton mood était une boisson, ce serait quoi ? 🍹✨",
+        "textEnglish":"Welcome to Péper’s Mood Café ☕✨ \n 7 moods, 7 weird drinks: \n Calm → laughing leaf tea \n Stressed → espresso with tiny lightning \n Determined → chili-raspberry milkshake \n In love → dancing rose petal cocoa \n Playful → tickly bubble sodaT \n ired → grey cloud infusion \n Inspired → sparkling firefly juice \n If your mood was a drink… what would it be? 🍹✨"
+       
+    },{
+        "id":"12",
+        "image":[
+            "/assets/journal/12-1.jpg",
+            "/assets/journal/12-2.jpg",
+            "/assets/journal/12-3.jpg",
+            "/assets/journal/12-4.jpg",
+            "/assets/journal/12-5.jpg",
+            "/assets/journal/12-6.jpg"
+        ],
+        "video":"",
+        "date":"22/08/2025",
+        "textFrench": "Mon kit de survie contre une mauvaise journée :🧋 Un bubble tea, 🛌 ma couverture pour disparaître du monde, 🎶 Une playlist qui me comprend, 📱 Un meme idiot envoyé à mon meilleur ami, 🚿 Une douche chaude. Et toi, c’est quoi ton arme secrète ?",
+        "textEnglish":"My bad day survival kit: bubble tea, blanket fort, cry-dance playlist, stupid meme to a friend, hot shower. What’s yours?"
+       
+    },{
+        "id":"13",
+        "image":[
+            "/assets/journal/13.jpg"
+        ],
+        "video":"",
+        "date":"23/08/2025",
+        "textFrench": "Aujourd’hui, j’ai fusionné avec mon pouf. 📺Ma seule performance de la journée ? Atteindre la télécommande sans bouger plus de 3 cm.Et tu sais quoi ? C’était parfait. Parfois, ne rien faire, c’est un sport… et je suis champion aujourd’hui. 🏆Et toi, t’es plutôt team “je sais me détendre” ou team “je culpabilise dès que je fais rien” ?",
+        "textEnglish":"Today I merged with my beanbag. 📺Biggest achievement? Reaching the remote without moving more than 3 cm.Are you team “I can chill” or team “I feel guilty doing nothing”?"
+       
+        
+    },{
+        "id":"14",
+        "image":[
+            "/assets/journal/14.jpg"
+        ],
+        "video":"",
+        "date":"25/08/2025",
+        "textFrench": "J’ai postulé pour un job que je voulais vraiment… mais la réponse est tombée : c’est non. Au début j’ai voulu tout analyser. Pourquoi  pas moi ? Qu’est-ce que j’ai fait de mal ? Puis j’ai compris que je ne pouvais pas contrôler la réponse de l’employeur — seulement la mienne. Alors, j’ai respiré. Et lâché prise. 🍃 /n Toi aussi, tu as déjà été dans une situation où il fallait accepter et laisser aller ? C’était facile… ou pas du tout ?",
+        "textEnglish": "I didn’t get the job. I can’t control their answer—only my own. So I breathed… and let go. 🍃 Have you ever had to do the same?"
+
+    },{
+        "id":"15",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/15.mp4",
+        "date":"26/08/2025",
+        "textFrench": "Je voulais juste dire « non »… tout doucement. Mais mes mots ont trébuché, et c’est sorti comme un rugissement un peu tordu. 🐅 J’ai vu les yeux en face s’écarquiller, et moi… je voulais juste disparaître.\n Je crois que parfois, mes émotions passent avant mes phrases.Alors j’essaie d’apprendre… à respirer, à trouver les bons mots, même quand mon cœur s’emballe. \n Et toi… ça t’est déjà arrivé de dire les choses tout de travers ?",
+        "textEnglish": "I meant to say “no” softly, but it came out all wrong… 🐅 Ever had your words trip over your feelings?"
+       
+    },{
+        "id":"16",
+        "image":[
+            "/assets/journal/16.jpg"
+        ],
+        "video":"",
+        "date":"27/08/2025",
+        "textFrench": "Jour 1 sans sucre. J’ai survécu… mais à quel prix ? Chaque biscuit que je croise me murmure mon prénom. Le chocolat me fait de l’œil depuis mon frigo. J’ai même cru que ma bouilloire sentait la tarte aux pommes. Je suis vivant, mais vide. Très vide. Et toi… as-tu déjà tenté l’impensable ? As-tu survécu ? 👀",
+        "textEnglish":"Day 1 without sugar. Still alive… but barely. 🍫 Have you ever tried the unthinkable?"
+        
+    },{
+        "id":"17",
+        "image":[
+            "/assets/journal/17.jpg"
+        ],
+        "video":"",
+        "date":"28/08/2025",
+        "textFrench":"Aujourd’hui, je suis cette fleur flétrie, mais qui tient bon 🌸 Cette fatigue que je ressens au fond de moi, mais aussi cette force discrète qui refuse de faner complètement ⚡ Comment tu fais pour traverser ces jours sans couleur ? As-tu des petites astuces pour continuer à pousser, même flétri·e ?",
+        "textEnglish":"Today, I’m a wilting flower, the tiredness inside me—and the quiet strength that refuses to fade away completely. How do you get through colorless days? Any tips to keep growing, even when wilted?"
+        
+    },{
+        "id":"18",
+        "image":[
+            "/assets/journal/18.jpg"
+        ],
+        "video":"",
+        "date":"29/08/2025",
+        "textFrench": "Aujourd’hui, dans le métro, j’ai croisé mon ami… ou plutôt sa version mode économie d’énergie. Assis en face de moi, son ordinateur serré contre lui comme un doudou, il dormait à moitié, épuisé par sa semaine.\n Et je me suis dit : parfois, la vie adulte c’est juste survivre jusqu’à vendredi soir… et ça mérite déjà une médaille. 🥇\n Et toi, c’est quoi ton moment KO le plus mémorable ?",
+        "textEnglish":"Saw my friend in the metro today—half-asleep, hugging his laptop like a teddy bear.\n Adulting is basically surviving till Friday… medal-worthy. 🥇\n Bestie, what’s your most iconic KO moment?"
+        
+    },{
+        "id":"19",
+        "image":[
+            "/assets/journal/19-1.jpg",
+            "/assets/journal/19-2.jpg",
+            "/assets/journal/19-3.jpg",
+            "/assets/journal/19-4.jpg"
+        ],
+        "video":"",
+        "date":"01/09/2025",
+        "textFrench": "bonne rentree",
+        "textEnglish":""
+
+    },{
+        "id":"20",
+        "image":[
+            "/assets/journal/20.jpg"
+        ],
+        "video":"",
+        "date":"01/09/2025",
+        "textFrench": "Aujourd’hui, rien n’allait. J’étais prêt à me rouler en boule dans mon coin… Puis Myrtille a débarqué de nulle part, en me disant : “T’inquiète, je suis là. Mon épaule aussi.” Et juste comme ça… j’ai respiré un peu mieux. 🌸 \n Parfois, un simple “ça va ?” peut tout changer.Et toi, comment tu vas ?",
+        "textEnglish":"Today was a mess. Then Myrtille showed up: “Don’t worry, I’m here.” And suddenly… I could breathe again. 🌸"
+
+    },{
+        "id":"21",
+        "image":[
+            "/assets/journal/21.jpg"
+        ],
+        "video":"",
+        "date":"02/09/2025",
+        "textFrench": "L’amitié n’est jamais une ligne droite. Elle avance, recule, se perd parfois, puis revient sous une forme différente. C’est dans ces détours que je découvre la vraie profondeur des liens, celle qui résiste au temps et aux silences. Chaque instant partagé, même imparfait, construit quelque chose d’unique et précieux. ",
+        "textEnglish":"Friendship isn’t a straight line. It twists, fades, and returns changed. In those turns, I find the true strength of connection—lasting beyond time and silence."
+       
+    },{
+        "id":"22",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/22.mp4",
+        "date":"03/09/2025",
+        "textFrench": "Après une longue journée pas facile, je n’avais besoin que d’une chose : mon doudou. Pas pour fuir, juste pour respirer un peu mieux.Et toi… c’est quoi qui te console dans ces moments-là ? 🎐🌧️",
+        "textEnglish":"Bad day? I found my soft rescue. 💭🧸 What’s your comfort item when everything feels too much?"
+       
+    },{
+        "id":"23",
+        "image":[
+            "/assets/journal/23.jpg"
+        ],
+        "video":"",
+        "date":"04/09/2025",
+        "textFrench": "Je tente de méditer, de trouver un peu de paix intérieure 🌿 … et voilà cette mouche qui décide que c’est l’heure du concert privé. Le bruit du monde quand t’as juste besoin de calme, c’est un vrai art. Si t’as des techniques pour rester zen quand tout part en cacahuète, je suis preneur. Sérieusement, aide-moi, j’en peux plus de cette mouche !",
+        "textEnglish":"Trying to meditate, craving calm… and there’s this fly throwing a private concert. Got any tips to stay zen when everything’s chaos?"
+       
+    },{
+        "id":"24",
+        "image":[
+            "/assets/journal/24.jpg"
+        ],
+        "video":"",
+        "date":"05/09/2025",
+        "textFrench": "Vendredi soir. On est épuisés, mais on célèbre la fin de semaine! On a troqué nos ordis contre des gobelets géants, et nos soucis contre des perles de tapioca. Si ce n’est pas du développement personnel, je ne sais pas ce que c’est. Et toi, c’est quoi ton remède miracle après le boulot ?",
+        "textEnglish":"Friday night. Tired but we still celebrating. Laptops out, giant cups in. Stress swapped for tapioca pearls. If that’s not self-care, I don’t know what is. What’s your after-work cure?"
+        
+    },{
+        "id":"25",
+        "image":[
+            "/assets/journal/25-1.jpg",
+            "/assets/journal/25-2.jpg"
+        ],
+        "video":"",
+        "date":"08/09/2025",
+        "textFrench": "Coucou 💕 Ces dernières semaines, j’ai partagé un post par jour, et c’était super de vivre ce rythme avec vous ! Mais j’ai aussi un autre projet qui me tient à cœur : créer les stickers de mes amis ✨. Pour y consacrer plus de temps, je vais ralentir un peu et poster 1 fois par semaine.\n Merci à vous qui me suivez déjà, vous rendez cette aventure si spéciale 🫶. Et si tu passes par ici et que tu n’es pas encore abonné·e, c’est le bon moment pour nous rejoindre 🌸 !",
+        "textEnglish":"Hi friends 💕 I’ve been posting daily, but now slowing down to 1 post a week to focus on creating my stickers ✨. Thanks for following, and if you don’t yet — now’s the time to join 🫶!"
+        
+    },{
+        "id":"26",
+        "image":[
+            "/assets/journal/26.jpg"
+        ],
+        "video":"",
+        "date":"14/09/2025",
+        "textFrench": "Scène du crime : mon bureau.Victimes : 3 crayons, une tasse de thé froid et un post-it disparu.Auteur du chaos : Péper, en “création intense” (aka je sais plus où est mon cahier). 🎨💥Tout ça pour… une surprise rien que pour vous.Prêts pour le grand dévoilement ou on laisse le mystère planer ? 👀",
+        "textEnglish":"Crime scene: my desk.Chaos by Péper.All for… a surprise.Ready for the reveal? 👀"
+        
+    },{
+        "id":"27",
+        "image":[
+            "/assets/journal/27.jpg"
+        ],
+        "video":"",
+        "date":"20/12/2025",
+        "textFrench": "wallpaper autumn",
+        "textEnglish":""
+       
+    },{
+        "id":"28",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/28.mp4",
+        "date":"21/09/2025",
+        "textFrench": "Mon dimanche parfait ?Me lever à midi parce que le sommeil, c’est gratuit.Manger des pancakes jusqu’à ce que la gravité commence à me tirer vers le sol.Parler à un pigeon (il s’appelle Gérard).Adopter un nuage pour l’après-midi.Siester si fort que je me réveille dans un autre fuseau horaire.Et finir par regarder une série jusqu’à ce que Netflix me demande si je suis encore en vie. \n Bref… bonheur.Et toi, ton dimanche parfait, il ressemble à quoi ? 🌤️✨",
+        "textEnglish":"Perfect Sunday? Sleep till noon, pancakes overdose, chat with a pigeon, adopt a cloud, nap like I time-traveled, binge till Netflix checks if I’m alive.What’s yours?"
+       
+    },{
+        "id":"29",
+        "image":[
+            "/assets/journal/29.jpg"
+        ],
+        "video":"",
+        "date":"25/09/2025",
+        "textFrench": "Aujourd’hui, je dis doucement au revoir à l’été… ses longues journées, ses rires en plein air, ses bubble tea ensoleillés. Et j’accueille l’automne avec ses couleurs chaudes, ses plaids douillets et ses thés fumants 🍁✨.Chaque saison a sa magie… et toi, tu es plutôt team été ou team automne ? 🌞🍂",
+        "textEnglish":"Goodbye summer, hello autumn 🍂✨ Long days and sunny laughs give way to cozy blankets and warm tea. Are you summer team or autumn team? 🌞🍁"
+       
+    },{
+        "id":"30",
+        "image":[
+            "/assets/journal/30-1.jpg",
+            "/assets/journal/30-2.jpg",
+            "/assets/journal/30-3.jpg"
+
+        ],
+        "video":"",
+        "date":"01/10/2025",
+        "textFrench": "Aujourd’hui, j’ai voulu dessiner le portrait d’une amie… et disons que le résultat ressemble plus à une patate qu’à elle 🤭🥔. J’étais déçue, mais après je me suis dit : chaque essai fait partie du chemin. L’importance est de continuer et de se laisser le temps qu’il faut pour arriver à un résultat satisfaisant 🌱.Et toi, est-ce que tu arrives à être bienveillant·e avec toi-même quand ça ne marche pas du premier coup ? 💭",
+        "textEnglish":"Tried to draw my friend today… ended up with a happy potato 🤭🥔. But hey, every step is part of the process 🌱. Do you manage to be kind to yourself when things don’t turn out right away? 💭"
+       
+    },{
+        "id":"31",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/31.mp4",
+        "date":"05/10/2025",
+        "textFrench": "Ce mois-ci, l’équipe Péper Tree s’est déguisée pour Halloween : Draculapin 🦇🐰, Jack-o-chat 🎃🐱, Bou-ours 👻🐻, veuve noire 🕷️, chat-yeti ❄️🐱, mage-hibou 🦉✨, licorne bonbons 🍬🦄 et bien sûr un·e sorcier·ère 🪄.Alors, dis-moi… quel octobre es-tu ? 👀",
+        "textEnglish":"This October, we turned into Draculapin, Jack-o-Cat, Boo-Bear, Candy Unicorn & more 🎃✨ So tell me… which October are you? 👀"
+       
+    },{
+        "id":"32",
+        "image":[
+            "/assets/journal/32.jpg"
+        ],
+        "video":"",
+        "date":"06/10/2025",
+        "textFrench": "Joyeuses fêtes de la lune 🌕💫 à tous ceux qui la célèbrent aujourd’hui ✨ Que cette pleine lune vous apporte douceur et sérénité. Moi, je craque toujours devant les gâteaux de lune 🥮… et toi, tu en as déjà goûté un ? 👀💛",
+        "textEnglish":"Happy Moon Festival 🌕✨ Wishing you sweetness and peace tonight 💛 Have you ever tried mooncakes? 🥮👀"
+       
+    },{
+        "id":"33",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/33.MP4",
+        "date":"14/10/2025",
+        "textFrench": "Je suis allée voir mon amie Mellow, magicienne dans son temps libre ✨🍂 avec qui j’ai appris à remplir cette saison de pluie avec de la magie et des petits sorts.",
+        "textEnglish":"Met up with my friend Mellow, a part-time magician ✨🍂 She reminded me: autumn isn’t just grey, it can be magic."
+       
+    },{
+        "id":"34",
+        "image":[
+            "/assets/journal/34.jpg"
+        ],
+        "video":"",
+        "date":"22/10/2025",
+        "textFrench": "C’est le moment de manger les citrouilles en cette saison 🎃 Bourrées de bêta-carotène (super pour les yeux), de fibres (pour faire le plein et autre chose) et ça ne fait pas exploser les calories! Et si tu ne me suis pas encore, c’est le moment 😉",
+        "textEnglish":"Time to eat pumpkin in this witching season 🎃 Full of beta-carotene, fiber, and low in calories — fall never tasted so good. Join me?"
+       
+    },{
+        "id":"35",
+        "image":[
+            "/assets/journal/35.jpg"
+        ],
+        "video":"",
+        "date":"30/10/2025",
+        "textFrench": "Ce soir, je sors mon plus beau sortilège : “Abracada-bonbons 🍭et, Joyeux Halloween 🎃✨ !” En vrai j’hésite encore entre croquer des bonbons ou continuer mon régime… 🕸️",
+        "textEnglish":"Happy Halloween 🎃✨!"
+       
+    },{
+        "id":"36",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/36.MP4",
+        "date":"08/11/2025",
+        "textFrench": "Tu connais ces moments où tu es tellement concentré·e que tu oublies d’allumer la lumière ? 🌙 C’est ce qui m’est arrivé hier soir… jusqu’à ce que Myrtille me sauve de ma grotte obscure 🤭 Merci Myrtille 💜 Et toi, tu travailles dans le noir ou la lumière ?",
+        "textEnglish":"Ever been so focused you forget to turn on the light? 🌙 That was me… until Myrtille saved me ✨."
+       
+    },{
+        "id":"37",
+        "image":[
+            "/assets/journal/37.jpg"
+        ],
+        "video":"",
+        "date":"15/11/2025",
+        "textFrench": "C’est le moment d’aller au salon de thé avec mon ami Papin 🍵🍂 Pour parler de tout et de rien, et contempler les couleurs du soir d’automne 🍁 Et toi, plutôt salon de thé / café / maison / autre pour un automne un peu plus doux ? 💛",
+        "textEnglish":"Tea time with my friend Papin. Soft talk, slow evening 🍁 What’s your go-to place for cozy autumn ? "
+       
+    },{
+        "id":"38",
+        "image":[
+            "/assets/journal/38.jpg"
+        ],
+        "video":"",
+        "date":"17/11/2025",
+        "textFrench": "wallpaper pluie",
+        "textEnglish":""
+    },{
+        "id":"39",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/39.MP4",
+        "date":"23/11/2025",
+         "textFrench": "On dit que flâner, ce n’est pas acheter… J’adore me promener dans les boutiques, sentir les ambiances, regarder les jolies choses — c’est mon petit rituel pour me détendre et trouver l’inspiration 🌷Le seul hic, c’est que “juste flâner” finit souvent en “juste un sac (ou deux)” 🙃 💸 Et toi, t’arrives à te contrôler… ou tu craques à chaque fois comme moi ? 👀🛍️",
+        "textEnglish":"They say browsing isn’t buying… And yet, my subconscious disagrees. Do you window-shop or always end up with a bag (or two)? "
+       
+    },{
+        "id":"40",
+        "image":[
+            "/assets/journal/40.jpg"
+        ],
+        "video":"",
+        "date":"29/11/2025",
+        "textFrench": "Grande nouvelle 🌟 : Papipou devient l’égérie officielle du gamer Twitch AshuVidz 🎮! Entre 2 parties épiques et 3 snacks, il sera le visage de ses stickers (que j’ai créé avec beaucoup d’amour) 🧃💻Si t’aimes les jeux vidéo et les bonnes vibes, file découvrir son univers sur Twitch — et colle Papipou partout pour le soutenir 👾✨",
+        "textEnglish":""
+       
+    },{
+        "id":"41",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/41.MP4",
+        "date":"06/12/2025",
+        "textFrench": "Quand le froid revient, Bobby ressort toujours son petit doudou préféré 🐻 : sa Robe De Chambre tout doux, tout chaud ✨ Et toi, c’est quoi ton doudou qui t’accompagne en ces temps gris et froids ? ☕💛",
+        "textEnglish":"Cold days = Bathrobe as Binky 🧸✨ to keep warm. What’s your comfort buddy when it gets chilly?"
+       
+    },{
+        "id":"42",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/42.MP4",
+        "date":"13/12/2025",
+        "textFrench": "Ce week-end, je vais faire un choix super difficile 😭 :Team Chill ? Team Créatif ? Team Cocoon ? Ou Team Social ?J’hésite encore…👀💛 Peut-être un mélange entre plaid, dessins ratés, thé chaud et papotage avec un ami qui arrive en retard (comme toujours). Dis-moi ton pack du week-end en commentaire 🤭✨Et si tu ne me suis pas encore… viens par ici pour encore plus de vibes cute & cosy 🌿💕",
+        "textEnglish":"Weekend mode: Chill, Creative, Cocoon, or Social?Which pack are you picking? 👀✨Tell me in the comments — and follow for more cute & cosy vibes 💛🌿"
+       
+    },{
+        "id":"43",
+        "image":[
+            "/assets/journal/43.jpg"
+        ],
+        "video":"",
+        "date":"20/12/2025",
+        "textFrench": "C’est officiellement la saison des achats de Noël🎄🛍️ Et aujourd’hui, j’ai bien décidé de me lancer dans une petite séance de shopping. Je me faufile entre les décorations, et je teste les idées cadeaux. \n Mais… m’as-tu repérée dans l’image ? 👀 Je me cache peut-être (un peu), mais je suis bel et bien là, toute fluffy avec mes grandes oreilles violettes bien visibles ✨💜 ! \n Et pour l’occasions, j’ai créé des stickers à l’image de mes amis pour Noël, qu’en penses-tu ? Intéressé-e? 😃",
+        "textEnglish":"Christmas shopping mode: ON 🎄💜I’m hiding somewhere in the picture with my big purple ears… can you spot me? 👀✨"
+       
+    },{
+        "id":"44",
+        "image":[
+            "/assets/journal/44-1.jpg",
+            "/assets/journal/44-2.jpg"
+        ],
+        "video":"",
+        "date":"24/12/2025",
+        "textFrench": "Joyeux réveillon et joyeux Noël à tous ✨💜 Cette année, j’ai voulu apporter encore plus de douceur… alors j’ai sorti les pinceaux et l’acrylique pour vous peindre cette petite scène festive 🎨💫 Une nouvelle technique, beaucoup d’amour, et un énorme merci à vous d’être là. \n Je vous souhaite une soirée pleine de chaleur, de lumière, de bons repas et de câlins (humains ou doudous, je ne juge pas 😌).Prenez soin de vous et profitez de chaque petit instant magique.",
+        "textEnglish":"Merry Christmas & happy holidays ✨💜I painted this little acrylic scene to share some extra warmth this year.Wishing you a cozy, magical night."
+       
+    },{
+        "id":"45",
+        "image":[
+            "/assets/journal/45-1.jpg",
+            "/assets/journal/45-2.jpg"
+        ],
+        "video":"",
+        "date":"28/12/2025",
+        "textFrench": "Aujourd’hui, c’est officiellement mon dimanche Stranger Things 👀✨Je ne fais rien d’autre. Rien du tout. Juste moi, un plaid, un chocolat chaud… et Hawkins en fond sonore. Si quelqu’un me demande d’être productive : désolée, le portail vers l’Upside Down s’est déjà ouvert. 🌀😌 \n Et toi… tu suis aussi cette série de très près, ou j’ai dérivé toute seule dans le monde parallèle ? 😭🧇 ",
+        "textEnglish":"Today is 100% Stranger Things Sunday — blanket, hot chocolate, no productivity allowed. 👀✨ Do you follow the series too, or am I lost alone in the Upside Down? 🌀"
+       
+    },{
+        "id":"46",
+        "image":[
+            "/assets/journal/46.jpg"
+        ],
+        "video":"",
+        "date":"03/01/2026",
+        "textFrench": "Cette année, j’apprends à célébrer les choses simples : un thé chaud, un rayon de soleil, un message doux d’un ami… Tout ce qui fait du bien sans faire de bruit ✨ Et pour 2026, je nous souhaite à tous une année légère, joyeuse et pleine de petites victoires du quotidien. \n Bonne année 2026, merci d’être là, vraiment 💛 \n Et toi… tes résolutions cette année : plutôt simples ou complètement déjantées ? 👀✨",
+        "textEnglish":"This year, I’m learning to celebrate the little things ✨ \n Wishing you all a light and joyful 2026. \n Tell me: are your resolutions simple or wild this year? 🎉"
+       
+    },{
+        "id":"47",
+        "image":[
+            "/assets/journal/47.jpg"
+        ],
+        "video":"",
+        "date":"04/01/2026",
+        "textFrench": "Je crois que je suis officiellement en post-Stranger Things blues… 😭✨ Après la finale, j’étais tellement vide que j’ai fini par… redessiner toute l’équipe de PéperTree en mode affiche de la saison 5. Petit hommage à la série. 👀🌀 \n Dis-moi… tu as regardé la série aussi ?",
+        "textEnglish":"I’m deep in my post-Stranger Things blues… 😭 After the finale, I felt so empty I ended up drawing the whole PéperTree crew as a season 5 poster. A little tribute to the show.  \n Did you watch it too?"
+       
+    },{
+        "id":"48",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/48.MP4",
+        "date":"10/01/2026",
+        "textFrench": "J’ai essayé de méditer avec Maxou… sauf que… au bout de 2 minutes, monsieur a glissé dans le médit-dodo 😂✨ Un petit ronflement zen, et hop, l’illumination version sieste. \n Franchement, je peux même pas lui en vouloir : chacun sa manière d’atteindre la paix intérieure 😭💛 \n Et toi, c’est quoi ton style de méditation ? Dis-moi en commentaire : \n 1️⃣ L’illuminé qui respire super bien \n 2️⃣ Le penseur qui pense à ses courses \n 3️⃣ Le méditateur qui gigote \n 4️⃣ Le philosophe qui regarde le plafond \n 5️⃣ Le Maxou… qui s’endort 😴",
+        "textEnglish":"Tried meditating with Maxou today… he fell asleep after 2 minutes 😭🧘‍♂️💛 Honestly, iconic. \n Which meditation style are you?"
+       
+    },{
+        "id":"49",
+        "image":[
+            "/assets/journal/49.jpg"
+        ],
+        "video":"",
+        "date":"17/01/2026",
+        "textFrench": "Ce matin, j’ai ressorti ma tasse-doudou nuage. C‘est mon emotional support cloud pour toute la journée : elle me suit partout, elle m’encourage en silence, et je suis quasi sûre qu’elle me chuchote “respire… doucement…” à chaque gorgée. \n Bref, team cocooning activée ☁️🌿 Et toi, c’est quoi ton objet-doudou du moment ?",
+        "textEnglish":"This morning, I brought out my little cloud mug again ☁️💛 My emotional-support cup for the whole day. What’s your comfort object these days?"
+       
+    },{
+        "id":"50",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/50.MP4",
+        "date":"24/01/2026",
+        "textFrench": "Cette semaine, j’ai envie de la voir en couleurs. Si ta semaine était une teinte, elle serait laquelle ? \n Abricot doux \n Bleu ultramarine profond  \n Rose pâle qui rassure  \n Bleu-violet flashy plein d’énergie  \n Jaune lumineux \n Vert tranquille \n Marron cosy \n Rouge passion ? 🎨✨",
+        "textEnglish":"If your week had a color, what would it be? Apricot, ultramarine, pale pink, neon purple, yellow, green, brown, red… or something totally your own? 🎨✨"
+       
+    },{
+        "id":"51",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/51.MP4",
+        "date":"31/01/2026",
+        "textFrench": "Aujourd’hui, mon cerveau voulait absolument que je “fasse quelque chose”. Mon corps, lui, a décidé que fixer une feuille blanche pendant 3 heures était déjà une activité à part entière. Résultat : moi, immobile, en plein duel silencieux entre motivation et inertie… 😌🧠💭 \n Je crois qu’on a tous ces jours-là où l’on veut avancer, mais où rien ne bouge vraiment. Alors je respire, je me pardonne, et j’essaie de faire confiance au rythme du moment. Même si ce rythme ressemble à… regarder le vide.",
+        "textEnglish":"Today my brain wanted me to “be productive”. My body decided that staring at a blank page for 3 hours was enough productivity. So here I am, stuck between motivation and stillness… 😌💭 \n Some days are just slow. I’m learning to breathe, forgive myself, and trust the pace — even when the pace is… staring at nothing."
+       
+    },{
+        "id":"52",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/52.MP4",
+        "date":"02/02/2026",
+        "textFrench": "Bonne Chandeleur à tous 🥞✨ \n Aujourd’hui, Mimi s’est lancée dans la cuisson des crêpes avec beaucoup d’enthousiasme… et un peu trop de confiance 😌 \n Résultat : une crêpe, un envol majestueux, et un atterrissage direct au plafond. \n Comme quoi, l’important ce n’est pas la réussite… mais la bonne humeur 😆💛 \n 👉 Team crêpes parfaites ou team crêpes catastrophes ? ",
+        "textEnglish":"Happy Chandeleur 🥞✨ Mimi tried to flip a crêpe with confidence… it ended up on the ceiling 😆 \n Perfection is overrated — fun is not 💛 \n Are you team perfect crêpes or total fail?"
+       
+    },{
+        "id":"53",
+        "image":[
+            "/assets/journal/53.jpg"
+        ],
+        "video":"",
+        "date":"07/02/2026",
+        "textFrench": "Ce soir, Myrtille écrit dans son journal. Pas pour faire joli, pas pour bien écrire. Juste pour déposer la journée, remercier ce qui a été doux, et faire un peu de place dans son cœur avant de dormir ✨ \n Écrire, c’est sa façon de se tenir la main quand le monde va trop vite. Et toi, est-ce que tu écris aussi le soir, comme Myrtille ? 💌",
+        "textEnglish":"Tonight, Myrtille writes in her journal. To slow down, breathe, and leave the day behind 🌙 \n Writing is her gentle way to care for herself. Do you journal in the evening too? 💭"
+       
+    },{
+        "id":"54",
+        "image":[
+            "/assets/journal/54.PNG"
+        ],
+        "video":"",
+        "date":"14/02/2026",
+        "textFrench": "Aujourd’hui, l’amour flotte dans l’air. Pour les couples qui se tiennent la main, pour les célibataires qui apprennent à s’aimer fort, et pour tous les Valentin 💕 \n Que ce soit un regard, un message, un moment pour soi ou un grand amour, tout compte, tant que ça fait du bien. \n Et toi, aujourd’hui, tu célèbres l’amour comment ? 💭✨",
+        "textEnglish":"Love is in the air 💕 For couples, self-love moments, and every Valentin. \n How are you celebrating love today? 💌"
+       
+    },{
+        "id":"55",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/55.mov",
+        "date":"17/02/2026",
+        "textFrench": "Bonne année lunaire du Cheval à tous 🐎🧧✨ \n Aujourd’hui, Danelane voulait vous souhaiter ça dans les règles de l’art… avec pétards, bonne humeur et beaucoup trop de fumée 😌 que cette nouvelle année soit pleine d’énergie, de courage et de jolis départs ❤️ \n 👉 Vous êtes plutôt team pétards à fond ou team célébration tranquille à la maison ? ",
+        "textEnglish":"Happy Lunar New Year of the Horse 🐎🧧✨ \n Danelane tried to celebrate with fireworks… ended up coughing in the smoke 😂 Wishing you a year full of energy and fresh starts ❤️ \n Are you team fireworks or cozy home celebrations?"
+        
+    },{
+        "id":"56",
+        "image":[
+            "/assets/journal/56-1.jpg",
+            "/assets/journal/56-2.jpg"
+        ],
+        "video":"",
+        "date":"21/02/2026",
+        "textFrench": "Aujourd’hui, Maxou sort sa machine à coudre et me montre sa passion avec beaucoup trop de fierté 🪡😌",
+        "textEnglish":"Today, Maxou proudly shows off his love for sewing 🪡😌"
+    
+    },{
+        "id":"57",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/57.MP4",
+        "date":"28/02/2026",
+        "textFrench": "Myrtille cherchait de l’inspiration. On a ouvert Instagram. 2 minutes plus tard : chiens, chats, encore des chiens… Ahem. 😶 \n Résultat : zéro avancée, mais le cœur très rempli. Dis-moi… ça t’arrive aussi de venir chercher un truc et finir sur tout sauf ça ?",
+        "textEnglish":"Myrtille was looking for inspiration. Opened Instagram. 2 minutes later: dogs, cats… more dogs. Ahem. 😶 Does this happen to you too?"
+    
+    },{
+        "id":"58",
+        "image":[
+            "/assets/journal/58.jpg"
+        ],
+        "video":"",
+        "date":"03/03/2026",
+        "textFrench": "Ces temps-ci, Punch-kun est devenu populaire. Mais ce qui m'a vraiment attendrie, c'est cette scène : lui assis, à attendre ses humains préférés. Il y a quelque chose de rassurant dans l'attente, quand on aime. Et peut-être qu'en attendant de toucher nos rêves, on peut déjà se tenir à notre doudou.",
+        "textEnglish":"Punch-kun is popular these days, but what moved me most was him waiting for his favorite humans. Maybe while we wait to reach our dreams, we can still hold on to our comfort."
+    
+    },{
+        "id":"59",
+        "image":[
+            "/assets/journal/59-1.jpg",
+            "/assets/journal/59-2.jpg",
+            "/assets/journal/59-3.jpg"
+    
+        ],
+        "video":"",
+        "date":"07/03/2026",
+        "textFrench": "Cette année, je me sens chanceuse.Avec mes amis, on célèbre plein de choses différentes… et ça tombe presque au même moment : le Ramadan, le Carême et le Nouvel An chinois 🌙✨ \n Ce joli hasard du calendrier qui nous rappelle qu’on peut toujours se retrouver autour d’une table. \n Et vous, si vous étiez avec nous ce soir-là, quelle fête célébreriez-vous ?",
+        "textEnglish":"This year, I’m celebrating Ramadan, Lent and Chinese New Year with my friends 🌙✨ \n Different beliefs, one table under the stars 🤍 \n If you were there, which celebration would you join?"
+    
+    },{
+        "id":"60",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/60.MP4",
+        "date":"14/03/2026",
+        "textFrench": "Mon amie Myrtille a un super-pouvoir : tomber amoureuse d’un nouveau hobby en 24h. Poterie, tricot, aquarelle, crochet japonais… elle regarde trois vidéos, commande tout le matériel, se projette déjà experte. \n Deux semaines plus tard ? Le kit prend la poussière. \n Trop dur. Trop long. Ou déjà remplacé par une nouvelle passion. \n Et franchement… je la comprends un peu. \n C’est quoi le dernier hobby que tu as adopté (et abandonné) ? 👀",
+        "textEnglish":"My friend Myrtille falls in love with a new hobby every month. Watches a few videos, buys all the gear… \n Two weeks later? It’s collecting dust. \n Too hard. Too boring. New obsession unlocked. \n What’s the last hobby you got (a little too excited about)? 👀"
+    
+    },{
+        "id":"61",
+        "image":[
+            "/assets/journal/61.jpg"
+        ],
+        "video":"",
+        "date":"21/03/2026",
+        "textFrench": "Je ne pensais pas qu’un jour je serais fière d’avoir respecté ma liste de courses. Légumes. Papier toilette. Produits ménagers. \n Zéro folie. 100% adulte responsable. \n Le vrai scandale ? Je fais des menus pour la semaine et je m’en vante presque. \n Dites-moi que vous aussi vous vibrez devant une promo d’huile d’olive 👀",
+        "textEnglish":"I never thought I’d feel proud for sticking to my grocery list.Veggies. Toilet paper. Cleaning supplies. \n Zero chaos. Full adult mode. \n The real scandal? I meal prep… willingly. \n Please tell me you get excited over olive oil discounts too 👀"
+    
+    },{
+        "id":"62",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/62.MP4",
+        "date":"28/03/2026",
+        "textFrench": "Maxou était concentré. Le trait précis. L’inspiration au rendez-vous. Presqu’un chef-d’œuvre. Puis il a eu soif. Un geste simple. Prendre son verre d’eau. Boire calmement… \n Et évidemment, renverser TOUT sur le dessin. Apparemment, chez nous, même l’aquarelle se fait sans prévenir 💦 \n Est-ce que vous aussi vous avez ce talent caché pour saboter vos propres créations au dernier moment ? 👀",
+        "textEnglish":"Maxou was focused. Inspired. Almost a masterpiece. \n Then he reached for his water… and poured it all over his drawing 💦 \n Please tell me you also ruin things at the worst possible moment 👀"
+    
+    },{
+        "id":"63",
+        "image":[
+            "/assets/journal/63.jpg"
+        ],
+        "video":"",
+        "date":"04/04/2026",
+        "textFrench": "Cet après-midi, je me suis installée dans le salon, un livre ouvert sur les genoux, baignée par la lumière douce du printemps. Le soleil glissait sur les pages, réchauffait mes mains, ralentissait le temps. \n Dehors, tout recommence. Dedans, je me laisse porter par les mots. \n Il y a quelque chose de paisible dans ces moments simples, presque suspendus. \n Et toi, c’est quoi ton petit rituel cozy quand les beaux jours reviennent ? 🌿",
+        "textEnglish":"This afternoon, I sat in my living room with a book, wrapped in soft spring sunlight 🌸 \n The light warmed the pages, everything felt slower, gentler. Outside, the world starts again. Inside, I just read. \n What’s your favorite cozy spring ritual? 🌿"
+    
+    },{
+        "id":"64",
+        "image":[
+            "/assets/journal/64.jpg"
+        ],
+        "video":"",
+        "date":"11/04/2026",
+        "textFrench": "Peut-être qu’on n’a pas besoin d’un plan. Juste un peu de douceur.",
+        "textEnglish":"Maybe we don’t need a plan. Just a little gentleness."
+    
+    },{
+        "id":"65",
+        "image":[
+            "/assets/journal/65.jpg"
+        ],
+        "video":"",
+        "date":"18/04/2026",
+        "textFrench": "Ce matin-là, avec mon ami papin on s’est levé un peu plus tôt que d’habitude. Le monde dormait encore, le ciel changeait lentement de couleur, et on a regardé le soleil se lever en silence 🌤️ Il y avait ce sentiment étrange et réconfortant… comme un nouveau départ, calme et plein de promesses. Juste nous, l’air frais du matin, et le temps qui semblait ralentir 🤍 Et vous, est-ce que vous aimez aussi ces moments du matin, quand tout commence doucement ?",
+        "textEnglish":"That morning, with my friend papin we woke up a little earlier to watch the sunrise 🌅 The world was quiet, everything felt calm and new. Do you enjoy these peaceful morning moments too? "
+    
+    },{
+        "id":"66",
+        "image":[
+            ""
+        ],
+        "video":"/assets/journal/66.MP4",
+        "date":"25/04/2026",
+        "textFrench": "Je suis pas en retard. Je suis juste en train de respirer.",
+        "textEnglish":"I’m not behind. I’m just breathing."
+    
+    }
+]
