@@ -24,8 +24,6 @@ export class ContentService {
 
   ngOnInit(): void {
     let articles = this.getArticles();
-    console.log("fhbfhjrf");
-    console.log(articles);
   }
 
   getArticles(): Observable<Article[]> {
