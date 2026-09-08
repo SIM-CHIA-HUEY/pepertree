@@ -1,5 +1,5 @@
 .product-page {
-  background-image: url("src/assets/Pepetree-background-pattern.jpg");
+  background-image: url("/assets/Pepetree-background-pattern.jpg");
   background-repeat: repeat-y;
   background-size: contain;
 }

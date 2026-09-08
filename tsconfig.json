@@ -4,6 +4,7 @@
   "compilerOptions": {
     "resolveJsonModule": true,
     "baseUrl": "./",
+    "rootDir": "./src",
     "outDir": "./dist/out-tsc",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

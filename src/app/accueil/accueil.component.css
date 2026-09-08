@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-5);
-  background-image: url(src/assets/Pepetree-hero-peper.png);
+  background-image: url(/assets/Pepetree-hero-peper.png);
   padding-bottom: 25%;
 }
 @media (min-width: 600px) {
