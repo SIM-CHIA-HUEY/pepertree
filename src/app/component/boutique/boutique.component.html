@@ -1,0 +1,46 @@
+<div class="product-page">
+
+  <div class="boutique-title">
+    <h1>BOUTIQUE</h1>
+  </div>
+
+  <section class="section-products">
+    <div class="container">
+
+      <div class="product-row">
+
+        @for (item of productPeperTree; track item._id) {
+
+          <div>
+
+            <article class="product-card">
+
+              <img
+                [src]="item.images[0].url"
+                [alt]="item.images[0].alt"
+              />
+
+              <h3>{{ item.name }}</h3>
+
+              <p class="price">
+                €{{ item.price }}
+              </p>
+
+              <button
+                class="btn btn-buy"
+                type="button">
+                Ajouter au panier
+              </button>
+
+            </article>
+
+          </div>
+
+        }
+
+      </div>
+
+    </div>
+  </section>
+
+</div>

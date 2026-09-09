@@ -3,15 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactFormComponent } from './component/contact-form/contact-form.component';
 
 import { FormsModule } from '@angular/forms';
-import { BoutiqueComponent } from './boutique/boutique.component';
-import { AccueilComponent } from './accueil/accueil.component';
-import { ContactComponent } from './contact/contact.component';
-import { AproposComponent } from './apropos/apropos.component';
-import { FaqComponent } from './faq/faq.component';
-import { JournalblogComponent } from './journalblog/journalblog.component';
+import { BoutiqueComponent } from './component/boutique/boutique.component';
+import { AccueilComponent } from './component/accueil/accueil.component';
+import { ContactComponent } from './component/contact/contact.component';
+import { AproposComponent } from './component/apropos/apropos.component';
+import { FaqComponent } from './component/faq/faq.component';
+import { JournalblogComponent } from './component/journalblog/journalblog.component';
 // import { JsonPipe } from '@angular/common';
 
 @NgModule({

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as journalContent from '../../assets/content/journal-content.json';
+import * as journalContent from '../../../assets/content/journal-content.json';
 
 @Component({
     selector: 'app-journalblog',

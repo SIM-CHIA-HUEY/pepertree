@@ -32,53 +32,85 @@
   <div class="container">
 
     <!-- Pop-up dialog box Produit -->
-    @if (isModalShow) {
+
+    @if (isModalShow && selectedProduct) {
+
       <dialog class="productDialog">
+
         <div class="modalContent">
+
           <div>
             @if (mobileView) {
-              <p class="close-button" (click)="closeModal()"><i class="fa-solid fa-xmark"></i></p>
+              <p
+                class="close-button"
+                (click)="closeModal()"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </p>
             }
           </div>
+
           <div>
             <img
-              src={{modalImage}}
-              alt="productImage"
+              [src]="selectedProduct.images[0].url"
+              [alt]="selectedProduct.images[0].alt"
               class="modalImage"
-              />
+            />
           </div>
+
           <div class="information-produit">
+
             <div>
               @if (!mobileView) {
-                <p class="close-button" (click)="closeModal()"><i class="fa-solid fa-xmark"></i></p>
+                <p
+                  class="close-button"
+                  (click)="closeModal()"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </p>
               }
             </div>
+
             <div>
-              <h3>{{modalTitle}}</h3>
-              <p class="price">{{modalPrice}}</p>
+              <h3>{{ selectedProduct.name }}</h3>
+              <p class="price">
+                €{{ selectedProduct.price }}
+              </p>
             </div>
-            <div class="instruction-commander">
-              <p><u>Pour commander :</u>
-              <br><b>Note les références (ex : MA01)</b> ou les noms des produits que tu veux, ajoute <b>ton nom, prénom et ton adresse de livraison</b> — ou dis-moi si tu préfères une remise en main propre.
-              Puis envoie-moi tout ça par mail à : <b>peper.atelier&#64;gmail.com</b> 💌✨</p>
-            </div>
+
+          <button class="btn btn-buy" type="button">Ajouter au panier</button> 
+
           </div>
+
         </div>
+
       </dialog>
+
     }
 
     <!-- Cartes produit -->
     <div class="product-row">
       @for (item of productPeperTree; track item; let i = $index) {
         <div>
-          <article class="product-card" (click)="openModal(item.id)">
+
+          <article
+            class="product-card"
+            (click)="openModal(item)"
+          >
+
             <img
-              src={{item.image}}
-              alt="Produit PéperTree"
-              />
-            <h3>{{item.name}}</h3>
-            <p class="price">€{{item.price}}</p>
-            <!-- <button class="btn btn-buy" type="button">Ajouter au panier</button> -->
+              [src]="item.images[0].url"
+              [alt]="item.images[0].alt"
+            />
+
+            <h3>{{ item.name }}</h3>
+
+            <p class="price">
+              €{{ item.price }}
+            </p>
+            
+            <button class="btn btn-buy" type="button">Ajouter au panier</button> 
+
           </article>
         </div>
       }
