@@ -4,53 +4,55 @@
 
 <div class="cart-details-overview">
     <div class="cart-summary">
-        <p class="cart-summary-title">Détails</p>
+        <div class="summary-details">
+            <p class="summary-title">Détails</p>
 
-        @if (cart) {
+            @if (cart) {
 
-            @for (item of cart.items; track item.productId._id) {
+                @for (item of cart.items; track item.productId._id) {
+                    <div class="product">
+                        <div class="image">
+                            <img
+                                class="product-image"
+                                [src]="item.productId.images[0].url"
+                                [alt]="item.productId.images[0].alt"
+                            /></div>
+                        <div class="item-details">
+                            <div class="item-title-delete">
+                                <div class="small-title">{{ item.productId.name }}</div>
 
-                <div class="product">
-                    <div class="product-details-overview">
-                        <img
-                            class="product-image"
-                            [src]="item.productId.images[0].url"
-                            [alt]="item.productId.images[0].alt"
-                        />
-                    </div>
-                    <div>
-                        <div class="details-top-part">
-                            <div class="small-title">{{ item.productId.name }}</div>
-                            <button type="button"
-                                    class="remove-product"
-                                    (click)="deleteProduct(item.productId._id, item.quantity)">
-                                        <i class="fa-solid fa-xmark"></i>
-                            </button>
-                        </div>
-                        <div class="details-bottom-part">
-                            <p>€ {{ item.productId.price  | number:'1.2-2' }}</p>
-                            <div class="quantity-stepper">
-                                <button
-                                    type="button"
-                                    (click)="decreaseQuantity(item.productId._id, item.quantity)"
-                                    [disabled]="item.quantity <= 1">
-                                    −
+                                <button type="button"
+                                        class="remove-product"
+                                        (click)="deleteProduct(item.productId._id, item.quantity)">
+                                            <i class="fa-solid fa-xmark"></i>
                                 </button>
+                            </div>
+                            <div class="numbers">
+                                <div>€ {{ item.productId.price  | number:'1.2-2' }}</div>
+                                
+                                <div class="quantity-stepper">
+                                        <button
+                                            type="button"
+                                            (click)="decreaseQuantity(item.productId._id, item.quantity)"
+                                            [disabled]="item.quantity <= 1">
+                                            −
+                                        </button>
 
-                                <span>{{ item.quantity }}</span>
+                                        <span>{{ item.quantity }}</span>
 
-                                <button
-                                    type="button"
-                                    (click)="increaseQuantity(item.productId._id, item.quantity)">
-                                    +
-                                </button>
+                                        <button
+                                            type="button"
+                                            (click)="increaseQuantity(item.productId._id, item.quantity)">
+                                            +
+                                        </button>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                </div>
-
                 }
-        }
+            }
+        </div>
 
         <div class="cart-subtotal">
             <div>Sous-total</div>
@@ -59,7 +61,7 @@
     </div>
 
     <div class="delivery-choice">
-        <p class="delivery-choice-title">Mode de livraison</p>
+        <p class="summary-title">Mode de livraison</p>
 
             <label class="delivery-option">
                 <input

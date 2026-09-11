@@ -1,118 +1,186 @@
-<h1>RÉCAPITULATIF DE MA COMMANDE</h1>
+<h1 class="order-title">
+    FINALISER MA COMMANDE
+</h1>
 
-@if (cart) {
+<div class="order-container">
 
-    @for (
-        item of cart.items;
-        track item.productId._id
-    ) {
+    @if (cart) {
 
-        <div class="order-item">
+        @for ( item of cart.items; track item.productId._id ) {                
+                    
+            <div class="order-summary">
+                <p class="summary-title">Détails</p>
+                
+                <div class="item">
+                    <img
+                            class="product-image"
+                            [src]="item.productId.images[0].url"
+                            [alt]="item.productId.images[0].alt"
+                    />
 
-            <p>
-                {{ item.productId.name }}
-            </p>
+                    <div class="item-details">
+                        {{ item.productId.name }}
+                        <div class="item-quantity-price-bloc">
+                            <div class="item-quantity">Quantité : {{ item.quantity }}</div>
+                            <div class="item-price">€ {{ item.productId.price | number:'1.2-2' }} * {{ item.quantity }}</div>
+                        </div>
 
-            <p>
-                {{ item.productId.price | number:'1.2-2' }} €
-            </p>
+                    </div>
+                </div>
 
-            <p>
-                Quantité : {{ item.quantity }}
-            </p>
+                <div class="product-costs-bloc">
+                    <div class="costs-title">Total produits</div>
+                    <div class="costs-price">€ {{ getCartTotal() | number:'1.2-2' }}</div>
+                </div>
+
+                <div class="delivery-costs-bloc">
+                    <div class="osts-title">Frais de port</div>
+                    <div class="costs-price">999</div>
+                </div>
+
+                <div class="grand-total-bloc">
+                    <div class="grand-total-title">GRAND TOTAL</div>
+                    <div class="grand-total-price">999</div>
+                </div>
+
+                <button type="button" class="btn btn-primary-magenta" (click)="validateOrder()">
+                    Passer la commande
+                </button>
+
+            </div>
+        }          
+    }
+
+    <div class="client-information-delivery">
+        <p class="summary-title">Mes informations</p>
+
+        <p class="input-title">Nom, Prénom</p>
+        <input
+        type="text"
+        [(ngModel)]="customer.name"
+        placeholder="Nom, Prénom"
+        >
+
+        <p class="input-title">Email</p>
+        <input
+        type="email"
+        [(ngModel)]="customer.email"
+        placeholder="Email"
+        >
+
+        <p class="input-title">Téléphone</p>
+        <input
+        type="tel"
+        [(ngModel)]="customer.telephone"
+        placeholder="Téléphone"
+        >
+
+        <p class="summary-title">Détails de livraison</p>
+        
+        <div class="delivery-summary">
+
+            @if (selectedDelivery === 'hand_delivery') {
+
+                <p>
+                    Tu as choisi la remise en main propre. Choisis maintenant le lieu où tu souhaites récupérer ta commande :
+                </p>
+
+                <label class="delivery-option">
+                <input
+                    type="radio"
+                    name="delivery"
+                    value="chatelet"
+                    [(ngModel)]="delivery.pickupPoint"
+                    
+                >
+
+                <span>Châtelet</span>
+                </label>
+
+
+                <label class="delivery-option">
+                    <input
+                        type="radio"
+                        name="delivery"
+                        value="porte_italie"
+                        [(ngModel)]="delivery.pickupPoint"
+                        
+                    >
+
+                    <span>Porte d'Italie</span>
+                </label>
+
+                <label class="delivery-option">
+                <input
+                    type="radio"
+                    name="delivery"
+                    value="place_italie"
+                    [(ngModel)]="delivery.pickupPoint"
+                    
+                >
+
+                <span>Place d'Italie</span>
+                </label>
+
+                <label class="delivery-option">
+                    <input
+                        type="radio"
+                        name="delivery"
+                        value="madeleine"
+                        [(ngModel)]="delivery.pickupPoint"
+                        
+                    >
+
+                    <span>Madeleine</span>
+                </label>
+
+                <!-- <select [(ngModel)]="delivery.pickupPoint">
+                    <option value="">Choisir un point de rendez-vous</option>
+                    <option value="chatelet">Châtelet</option>
+                    <option value="porte_italie">Porte d'Italie</option>
+                    <option value="place_italie">Place d'Italie</option>
+                    <option value="madeleine">Madeleine</option>
+                </select> -->
+
+            }
+
+            @if (selectedDelivery === 'mail_delivery') {
+
+                <p>
+                    Tu as choisi la livraison chez toi. Renseigne maintenant tes coordonnées de livraison :
+                </p>
+
+                <p class="input-title">Adresse</p>
+                <input
+                    type="text"
+                    [(ngModel)]="delivery.address"
+                    placeholder="Adresse"
+                >
+
+                <p class="input-title">N. d'appartement</p>
+                <input
+                    type="text"
+                    [(ngModel)]="delivery.apartment"
+                    placeholder="Appartement"
+                >
+
+                <p class="input-title">Interphone</p>
+                <input
+                    type="text"
+                    [(ngModel)]="delivery.intercom"
+                    placeholder="Interphone"
+                >
+
+                <p class="input-title">Code porte</p>
+                <input
+                    type="text"
+                    [(ngModel)]="delivery.doorCode"
+                    placeholder="Code porte"
+                >
+
+            }
 
         </div>
-
-    }
-
-    <div class="order-total">
-
-        <strong>Total :</strong>
-
-        <span>
-            {{ getCartTotal() | number:'1.2-2' }} €
-        </span>
-
     </div>
-}
-
-<input
-  type="text"
-  [(ngModel)]="customer.name"
-  placeholder="Nom"
->
-
-<input
-  type="email"
-  [(ngModel)]="customer.email"
-  placeholder="Email"
->
-
-<input
-  type="tel"
-  [(ngModel)]="customer.telephone"
-  placeholder="Téléphone"
->
-
-
-<div class="delivery-summary">
-
-    <h2>Mode de livraison</h2>
-
-    @if (selectedDelivery === 'hand_delivery') {
-
-        <p>
-            Livraison en main propre
-        </p>
-
-        <select [(ngModel)]="delivery.pickupPoint">
-            <option value="">Choisir un point de rendez-vous</option>
-            <option value="chatelet">Châtelet</option>
-            <option value="porte_italie">Porte d'Italie</option>
-            <option value="place_italie">Place d'Italie</option>
-            <option value="madeleine">Madeleine</option>
-        </select>
-
-    }
-
-    @if (selectedDelivery === 'mail_delivery') {
-
-        <p>
-            Livraison à domicile
-        </p>
-
-        <input
-            type="text"
-            [(ngModel)]="delivery.address"
-            placeholder="Adresse"
-        >
-
-        <input
-            type="text"
-            [(ngModel)]="delivery.apartment"
-            placeholder="Appartement"
-        >
-
-        <input
-            type="text"
-            [(ngModel)]="delivery.intercom"
-            placeholder="Interphone"
-        >
-
-        <input
-            type="text"
-            [(ngModel)]="delivery.doorCode"
-            placeholder="Code porte"
-        >
-
-    }
 
 </div>
-
-<button
-    type="button"
-    (click)="validateOrder()">
-
-    Valider ma commande
-
-</button>

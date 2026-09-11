@@ -1,0 +1,124 @@
+.order-title{
+    text-align: center;
+    color: var(--magenta);
+    font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    justify-self: center;
+}
+
+.order-container {
+    background-color: var(--lightviolet);
+    display: flex;
+    padding : var(--space-4);
+    gap: var(--space-4);
+}
+
+.summary-title {
+    color: var(--violet);
+    font-weight: 800;
+    text-align: center;
+    border: 1px solid var(--violet);
+    padding: var(--space-2);
+}
+
+/* ORDER SUMMARY */
+.order-summary {
+    width: 50%;
+}
+
+.item {
+    width : 100%;
+    display: flex;
+    gap: var(--space-2);
+    padding-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .product-image {
+    width: 7vw;
+  }
+}
+@media (max-width: 599px) {
+  .product-image {
+    width: 20vw;
+  }
+}
+
+.item-details {
+    width: 100%;
+    align-content: space-evenly;
+}
+
+.item-quantity-price-bloc {
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* Calculated prices */
+.product-costs-bloc {
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--violet);
+    padding: 10px 0;
+}
+.delivery-costs-bloc {
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+}
+.grand-total-bloc {
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px double var(--violet);
+    padding: 10px 0;
+}
+
+/* CLIENT INFO AND DELIVERY INFO */
+.client-information-delivery {
+    width: 50%;
+    background-color: var(--paper);
+    padding: 0 20px 20px 20px;
+}
+.input-title{
+    color: var(--violet);
+    margin: 10px 0 0 0; 
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    background-color: var(--lightviolet);
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    padding: 0 15px;
+    margin: 5px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.delivery-choice {
+    width: 40%;
+    background-color: var(--paper);
+    padding: 0 20px 20px 20px;
+}
+
+.delivery-option {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    cursor: pointer;
+    margin-bottom: var(--space-4);
+}
+
+.delivery-option input {
+    cursor: pointer;
+}
