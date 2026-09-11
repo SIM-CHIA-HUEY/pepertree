@@ -1,26 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, tap } from 'rxjs';
-import { Product } from '../models/product.model';
-
-export interface CartItem {
-  productId: Product;
-  quantity: number;
-}
-
-export interface Cart {
-  _id: string;
-  items: CartItem[];
-}
+import { Cart } from '../models/cart.model';
 
 export interface CartResponse {
   message: string;
   cart: Cart;
 }
-
-export type DeliveryMethod =
-  | 'hand_delivery'
-  | 'mail_delivery';
 
 @Injectable({
   providedIn: 'root'
@@ -120,14 +106,24 @@ export class CartService {
 
   deleteCart(): Observable<{ message: string }> {
 
-    const cartId = sessionStorage.getItem(this.cartStorageKey);
+    const cartId = sessionStorage.getItem(
+      this.cartStorageKey
+    );
 
     return this.http.delete<{ message: string }>(
       `${this.apiUrl}/${cartId}`
     ).pipe(
 
       tap(() => {
-        sessionStorage.removeItem(this.cartStorageKey);
+
+        sessionStorage.removeItem(
+          this.cartStorageKey
+        );
+
+        sessionStorage.removeItem(
+          this.deliveryStorageKey
+        );
+
       })
 
     );

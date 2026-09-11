@@ -36,6 +36,24 @@
     </div>
 }
 
+<input
+  type="text"
+  [(ngModel)]="customer.name"
+  placeholder="Nom"
+>
+
+<input
+  type="email"
+  [(ngModel)]="customer.email"
+  placeholder="Email"
+>
+
+<input
+  type="tel"
+  [(ngModel)]="customer.telephone"
+  placeholder="Téléphone"
+>
+
 
 <div class="delivery-summary">
 
@@ -47,6 +65,14 @@
             Livraison en main propre
         </p>
 
+        <select [(ngModel)]="delivery.pickupPoint">
+            <option value="">Choisir un point de rendez-vous</option>
+            <option value="chatelet">Châtelet</option>
+            <option value="porte_italie">Porte d'Italie</option>
+            <option value="place_italie">Place d'Italie</option>
+            <option value="madeleine">Madeleine</option>
+        </select>
+
     }
 
     @if (selectedDelivery === 'mail_delivery') {
@@ -55,6 +81,38 @@
             Livraison à domicile
         </p>
 
+        <input
+            type="text"
+            [(ngModel)]="delivery.address"
+            placeholder="Adresse"
+        >
+
+        <input
+            type="text"
+            [(ngModel)]="delivery.apartment"
+            placeholder="Appartement"
+        >
+
+        <input
+            type="text"
+            [(ngModel)]="delivery.intercom"
+            placeholder="Interphone"
+        >
+
+        <input
+            type="text"
+            [(ngModel)]="delivery.doorCode"
+            placeholder="Code porte"
+        >
+
     }
 
 </div>
+
+<button
+    type="button"
+    (click)="validateOrder()">
+
+    Valider ma commande
+
+</button>
