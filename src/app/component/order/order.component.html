@@ -1,0 +1,60 @@
+<h1>RÉCAPITULATIF DE MA COMMANDE</h1>
+
+@if (cart) {
+
+    @for (
+        item of cart.items;
+        track item.productId._id
+    ) {
+
+        <div class="order-item">
+
+            <p>
+                {{ item.productId.name }}
+            </p>
+
+            <p>
+                {{ item.productId.price | number:'1.2-2' }} €
+            </p>
+
+            <p>
+                Quantité : {{ item.quantity }}
+            </p>
+
+        </div>
+
+    }
+
+    <div class="order-total">
+
+        <strong>Total :</strong>
+
+        <span>
+            {{ getCartTotal() | number:'1.2-2' }} €
+        </span>
+
+    </div>
+}
+
+
+<div class="delivery-summary">
+
+    <h2>Mode de livraison</h2>
+
+    @if (selectedDelivery === 'hand_delivery') {
+
+        <p>
+            Livraison en main propre
+        </p>
+
+    }
+
+    @if (selectedDelivery === 'mail_delivery') {
+
+        <p>
+            Livraison à domicile
+        </p>
+
+    }
+
+</div>

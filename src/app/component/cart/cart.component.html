@@ -21,10 +21,14 @@
                     <div>
                         <div class="details-top-part">
                             <div class="small-title">{{ item.productId.name }}</div>
-                            <button (click)="deleteProduct(item.productId._id, item.quantity)"><i class="fa-solid fa-xmark"></i></button>
+                            <button type="button"
+                                    class="remove-product"
+                                    (click)="deleteProduct(item.productId._id, item.quantity)">
+                                        <i class="fa-solid fa-xmark"></i>
+                            </button>
                         </div>
                         <div class="details-bottom-part">
-                            <p>€ {{ item.productId.price }}</p>
+                            <p>€ {{ item.productId.price  | number:'1.2-2' }}</p>
                             <div class="quantity-stepper">
                                 <button
                                     type="button"
@@ -57,36 +61,35 @@
     <div class="delivery-choice">
         <p class="delivery-choice-title">Mode de livraison</p>
 
-        <label class="delivery-option">
-            <input
-                type="radio"
-                name="delivery"
-                value="hand_delivery"
-                [(ngModel)]="selectedDelivery"
-            />
+            <label class="delivery-option">
+                <input
+                    type="radio"
+                    name="delivery"
+                    value="hand_delivery"
+                    [(ngModel)]="selectedDelivery"
+                    (change)="saveDeliveryMethod()"
+                >
 
-            <span>
-                Livraison en main propre
-            </span>
-        </label>
+                <span>Livraison en main propre</span>
+            </label>
 
-        <label class="delivery-option">
-            <input
-                type="radio"
-                name="delivery"
-                value="mail_delivery"
-                [(ngModel)]="selectedDelivery"
-            />
 
-            <span>
-                Livraison à domicile
-            </span>
-        </label>
+            <label class="delivery-option">
+                <input
+                    type="radio"
+                    name="delivery"
+                    value="mail_delivery"
+                    [(ngModel)]="selectedDelivery"
+                    (change)="saveDeliveryMethod()"
+                >
+
+                <span>Livraison à domicile</span>
+            </label>
 
         <button
                 class="btn btn-primary-magenta"
                 type="button"
-                (click)="nextStep()">
+                (click)="goToOrder()">
                 Suivant
         </button>
         

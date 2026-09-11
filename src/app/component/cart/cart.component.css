@@ -61,6 +61,21 @@
     justify-content: space-between;
 }
 
+.remove-product {
+    border: none;
+    background-color: var(--violet);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .details-bottom-part {
     display: flex;
     justify-content: space-between;
@@ -102,7 +117,7 @@
 .delivery-choice {
     width: 40%;
     background-color: var(--paper);
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .delivery-choice-title {

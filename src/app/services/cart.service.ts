@@ -18,6 +18,10 @@ export interface CartResponse {
   cart: Cart;
 }
 
+export type DeliveryMethod =
+  | 'hand_delivery'
+  | 'mail_delivery';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -25,6 +29,7 @@ export class CartService {
 
   private apiUrl = 'http://localhost:3000/carts';
   private cartStorageKey = 'cartId';
+  private deliveryStorageKey = 'deliveryMethod';
 
   constructor(private http: HttpClient) {}
 
@@ -126,5 +131,18 @@ export class CartService {
       })
 
     );
+  }
+
+  setDeliveryMethod(deliveryMethod: 'hand_delivery' | 'mail_delivery'): void {
+    sessionStorage.setItem(
+      this.deliveryStorageKey,
+      deliveryMethod
+    );
+  }
+
+  getDeliveryMethod(): 'hand_delivery' | 'mail_delivery' | null {
+    return sessionStorage.getItem(
+      this.deliveryStorageKey
+    ) as 'hand_delivery' | 'mail_delivery' | null;
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService, Cart } from '../../services/cart.service';
+import { CartService, Cart, DeliveryMethod } from '../../services/cart.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -10,9 +11,12 @@ import { CartService, Cart } from '../../services/cart.service';
 export class CartComponent implements OnInit {
 
   cart: Cart | null = null;
-  selectedDelivery: 'hand_delivery' | 'null' = 'null';
+  selectedDelivery: DeliveryMethod | null = null;
 
-  constructor(private cartService: CartService) {}
+  constructor(
+    private cartService: CartService,
+    private router : Router
+  ) {}
 
   ngOnInit(): void {
 
@@ -23,7 +27,22 @@ export class CartComponent implements OnInit {
       error: (error) => {
         console.error('Erreur lors de la récupération du panier :', error);
       }
-    });   
+    });  
+    
+    this.selectedDelivery =
+    this.cartService.getDeliveryMethod();
+
+    this.cartService.getCart().subscribe({
+      next: (response) => {
+        this.cart = response.cart;
+      },
+      error: (error) => {
+        console.error(
+          'Erreur lors de la récupération du panier :',
+          error
+        );
+      }
+    });
 
   }
 
@@ -106,8 +125,20 @@ export class CartComponent implements OnInit {
     });
   }
 
-  nextStep(){
-    console.log(this.selectedDelivery)
+  saveDeliveryMethod(): void {
+    if (this.selectedDelivery !== null) {
+      this.cartService.setDeliveryMethod(
+        this.selectedDelivery
+      );
+    }
+  }
 
+  goToOrder(): void {
+    const deliveryMethod =
+      this.cartService.getDeliveryMethod();
+    if (!deliveryMethod) {
+      return;
+    }
+    this.router.navigate(['/commande']);
   }
 }
