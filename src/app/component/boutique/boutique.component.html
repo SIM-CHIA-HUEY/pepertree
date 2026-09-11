@@ -13,11 +13,14 @@
 
           <div>
 
-            <article class="product-card">
+            <article class="product-card"
+            >
 
               <img
+                class="product-image"
                 [src]="item.images[0].url"
                 [alt]="item.images[0].alt"
+                [routerLink]="['/produit', item.slug]"
               />
 
               <h3>{{ item.name }}</h3>
@@ -27,8 +30,9 @@
               </p>
 
               <button
-                class="btn btn-buy"
-                type="button">
+                class="btn btn-primary-magenta"
+                type="button"
+                (click)="sendCart(item)">
                 Ajouter au panier
               </button>
 

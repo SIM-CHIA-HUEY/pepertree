@@ -1,1 +1,150 @@
-<p>product works!</p>
+<div class="product-page">
+
+  @if (product) {
+
+    <!-- Modal pour voir l'image en grand -->
+    @if (isImageModalOpen && selectedImage) {
+
+    <div
+      class="image-modal"
+      (click)="closeImageModal()"
+    >
+
+      <div
+        class="image-modal-content"
+        (click)="$event.stopPropagation()"
+      >
+
+        <button
+          type="button"
+          class="image-modal-close"
+          (click)="closeImageModal()"
+          aria-label="Fermer"
+        >
+          ×
+        </button>
+
+        <img
+          [src]="selectedImage.url"
+          [alt]="selectedImage.alt"
+        />
+
+      </div>
+
+    </div>
+
+  }
+
+<!-- Images -->
+    <div class="product-left-part"> 
+
+      <div>
+        <div class="product-main-image">
+          <img
+            [src]="product.images[1].url"
+            [alt]="product.images[1].alt"
+            (click)="openImageModal(product.images[1])"
+          />
+        </div>
+        <div class="bottom-product-images">
+          @for (image of product.images.slice(2); track image.url) {
+            <img class="side-images"
+              [src]="image.url"
+              [alt]="image.alt"      
+              (click)="openImageModal(image)"
+            />
+          }
+        </div>
+      </div>
+
+    </div>
+
+    <div class="product-right-part">
+      <div>
+        <p>{{ product.name }}</p>
+        <strong>€{{ product.price }}</strong>
+
+        <div class="quantity-selector">
+
+          <p>Quantité</p>
+
+          <button
+            type="button"
+            class="quantity-btn"
+            (click)="decreaseQuantity()"
+            aria-label="Diminuer la quantité"
+          >
+            −
+          </button>
+
+          <span class="quantity">
+            {{ quantity }}
+          </span>
+
+          <button
+            type="button"
+            class="quantity-btn"
+            (click)="increaseQuantity()"
+            aria-label="Augmenter la quantité"
+          >
+            +
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn-primary-magenta" (click)="sendCart()">Ajouter au panier</button>
+      </div>
+
+      <div class="product-info-bottom">
+        <details>
+          <summary>
+            <span>Description</span>
+            <span class="accordion-icon"></span>
+          </summary>
+
+          <p>
+            {{ product.description }}
+          </p>
+        </details>
+      
+        <details>
+          <summary>
+            <span>Matière</span>
+            <span class="accordion-icon"></span>
+          </summary>
+
+          <p>
+            {{ product.material }}
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            <span>Taille</span>
+            <span class="accordion-icon"></span>
+          </summary>
+
+          <p>
+            {{ product.size }}
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            <span>Livraison et paiement</span>
+            <span class="accordion-icon"></span>
+          </summary>
+
+          <p>
+            Lorem Ipsum
+          </p>
+        </details>
+
+      </div>
+    </div>
+  }
+
+</div>

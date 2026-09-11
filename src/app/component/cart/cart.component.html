@@ -1,0 +1,146 @@
+<h1 class="cart-title">
+    RECAP DE MA COMMANDE
+</h1>
+
+<div class="cart-details-overview">
+    <div class="cart-summary">
+        <p class="cart-summary-title">Détails</p>
+
+        @if (cart) {
+
+            @for (item of cart.items; track item.productId._id) {
+
+                <div class="product">
+                    <div class="product-details-overview">
+                        <img
+                            class="product-image"
+                            [src]="item.productId.images[0].url"
+                            [alt]="item.productId.images[0].alt"
+                        />
+                    </div>
+                    <div>
+                        <div class="details-top-part">
+                            <div class="small-title">{{ item.productId.name }}</div>
+                            <button (click)="deleteProduct(item.productId._id, item.quantity)"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="details-bottom-part">
+                            <p>€ {{ item.productId.price }}</p>
+                            <div class="quantity-stepper">
+                                <button
+                                    type="button"
+                                    (click)="decreaseQuantity(item.productId._id, item.quantity)"
+                                    [disabled]="item.quantity <= 1">
+                                    −
+                                </button>
+
+                                <span>{{ item.quantity }}</span>
+
+                                <button
+                                    type="button"
+                                    (click)="increaseQuantity(item.productId._id, item.quantity)">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                }
+        }
+
+        <div class="cart-subtotal">
+            <div>Sous-total</div>
+            <div class="small-title">€ {{ getCartTotal() | number:'1.2-2' }}</div>
+        </div>    
+    </div>
+
+    <div class="delivery-choice">
+        <p class="delivery-choice-title">Mode de livraison</p>
+
+        <label class="delivery-option">
+            <input
+                type="radio"
+                name="delivery"
+                value="hand_delivery"
+                [(ngModel)]="selectedDelivery"
+            />
+
+            <span>
+                Livraison en main propre
+            </span>
+        </label>
+
+        <label class="delivery-option">
+            <input
+                type="radio"
+                name="delivery"
+                value="mail_delivery"
+                [(ngModel)]="selectedDelivery"
+            />
+
+            <span>
+                Livraison à domicile
+            </span>
+        </label>
+
+        <button
+                class="btn btn-primary-magenta"
+                type="button"
+                (click)="nextStep()">
+                Suivant
+        </button>
+        
+    </div>
+
+</div>
+
+<div class="process-explanation">
+    <div class="explanation-bloc">
+        <div class="process-half-part">
+            <h3 class="small-title">Délai de commande</h3>
+            <p>Chaque commande est préparée et emballée à la main avec beaucoup de soin. Comme tout est fait artisanalement, il peut y avoir un petit délai avant l'expédition.</p>
+            <p>Compte environ 1 à 2 semaines pour recevoir ta commande. Je ferai bien sûr au plus vite pour qu'elle arrive entre tes mains </p>
+            <a routerLink="/faq" routerLinkActive="active" class="link"> -> Voir FAQ</a>
+        </div>
+        <div class="process-half-part">
+            <img
+                src="assets/cart-deliveryTime.jpg"
+                alt="PeperTree logo"
+            />
+        </div>
+    </div>
+
+    <div class="explanation-bloc">
+        <div class="process-half-part">
+            <img
+                src="assets/cart-paymentMethod.jpg"
+                alt="PeperTree logo"
+            />
+        </div>
+        <div class="process-half-part">
+            <h3 class="small-title">Moyen de paiement</h3>
+            <p>Le paiement se fait via PayPal. Pour bénéficier de la protection de PayPal, tu peux choisir l'option « Biens et services ». </p>
+            <p>Une fois ta commande passée, je t'enverrai un e-mail de demande de paiement correspondant au montant de ta commande. Ta commande sera préparée dès réception du paiement.</p>
+            <a routerLink="/faq" routerLinkActive="active" class="link"> -> Voir FAQ</a>
+        </div>
+    </div>
+
+    <div class="explanation-bloc">
+        <div class="process-half-part">
+            <p>
+                Si tu as la moindre question, n'hésite pas à me contacter à
+                <a href="mailto:peper.atelier@gmail.com">peper.atelier&#64;gmail.com</a>
+            </p>    
+            <p>Je serai ravie de te répondre !</p>
+            
+        </div>
+        <div class="process-half-part">
+            <img
+                src="assets/cart-questions.jpg"
+                alt="PeperTree logo"
+            />
+        </div>
+
+    </div>
+
+</div>

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { ProductService } from '../../services/product.service'; 
+import { CartService } from '../../services/cart.service';
 import { Product } from '../../models/product.model';
 
 @Component({
@@ -15,7 +16,8 @@ export class AccueilComponent implements OnInit {
   selectedProduct: Product | null = null;
 
   constructor(
-    private productService: ProductService
+    private productService: ProductService,
+    private cartService: CartService
   ) { }
 
   ngOnInit(): void {
@@ -43,14 +45,15 @@ export class AccueilComponent implements OnInit {
     }
   }
 
-  openModal(product: Product) {
-    this.selectedProduct = product;
-    this.isModalShow = true;
-  }
-
-  closeModal() {
-    this.isModalShow = false;
-    this.selectedProduct = null;
+  sendCart(product: Product): void {
+    this.cartService.addToCart(
+    product._id,
+    1
+    ).subscribe({
+      error: (error) => {
+        console.error('Erreur lors de l’ajout au panier :', error);
+      }
+    });
   }
 
 }

@@ -7,6 +7,8 @@ import { ContactFormComponent } from './component/contact-form/contact-form.comp
 
 import { FormsModule } from '@angular/forms';
 import { BoutiqueComponent } from './component/boutique/boutique.component';
+import { ProductComponent } from './component/product/product.component';
+import { CartComponent } from './component/cart/cart.component';
 import { AccueilComponent } from './component/accueil/accueil.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { AproposComponent } from './component/apropos/apropos.component';
@@ -19,6 +21,8 @@ import { JournalblogComponent } from './component/journalblog/journalblog.compon
     AppComponent,
     ContactFormComponent,
     BoutiqueComponent,
+    ProductComponent,
+    CartComponent,
     AccueilComponent,
     ContactComponent,
     AproposComponent,

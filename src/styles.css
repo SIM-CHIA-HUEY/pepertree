@@ -3,6 +3,7 @@
   --violet: #48317b;
   --magenta: #ec3092;
   --turquoise: #00b6b8;
+  --lightviolet: #d7d7f3;
   --green: #a4ce4c; 
   --ink: #2a2340;
   --paper: #fffdfb;
@@ -66,6 +67,7 @@ img {
 .btn-primary-magenta {
   background: var(--magenta);
   color: white;
+  width: 100%;
 }
 .btn-primary-turquoise{
   background: var(--turquoise);
@@ -89,11 +91,6 @@ img {
 }
 .btn-ghost:hover {
   background: rgba(72, 49, 123, 0.08);
-}
-.btn-buy {
-  background: var(--magenta);
-  color: #fff;
-  width: 100%;
 }
 .btn-dark {
   background: var(--violet);

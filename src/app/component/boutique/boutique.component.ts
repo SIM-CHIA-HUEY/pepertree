@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ProductService } from '../../services/product.service';
+import { CartService } from '../../services/cart.service';
 import { Product } from '../../models/product.model';
 
 @Component({
@@ -12,9 +13,12 @@ import { Product } from '../../models/product.model';
 export class BoutiqueComponent implements OnInit {
 
   productPeperTree: Product[] = [];
+  product: Product | null = null;
+
 
   constructor(
-    private productService: ProductService
+    private productService: ProductService,
+    private cartService: CartService
   ) {}
 
   ngOnInit(): void {
@@ -33,5 +37,18 @@ export class BoutiqueComponent implements OnInit {
     });
 
   }
+
+  sendCart(product: Product): void {
+
+  this.cartService.addToCart(
+    product._id,
+    1
+  ).subscribe({
+    error: (error) => {
+      console.error('Erreur lors de l’ajout au panier :', error);
+    }
+  });
+
+}
 
 }

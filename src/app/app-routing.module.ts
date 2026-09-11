@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './component/accueil/accueil.component';
 import { BoutiqueComponent } from './component/boutique/boutique.component';
 import { ProductComponent } from './component/product/product.component';
+import { CartComponent } from './component/cart/cart.component';
 import { AproposComponent } from './component/apropos/apropos.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FaqComponent } from './component/faq/faq.component';
@@ -11,7 +12,8 @@ import { JournalblogComponent } from './component/journalblog/journalblog.compon
 const routes: Routes = [
   { path: '', component: AccueilComponent },
   { path: 'boutique', component: BoutiqueComponent },
-  { path: 'produit/:id', component: ProductComponent},
+  { path: 'panier', component: CartComponent },
+  { path: 'produit/:slug', component: ProductComponent},
   { path: 'quiestpeper', component: AproposComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'faq', component: FaqComponent },

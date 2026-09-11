@@ -10,6 +10,10 @@ export interface ProductVideo {
 
 export interface Product {
   _id: string;
+  slug: {
+    type: string;
+    required: true;
+  };
   name: string;
   description: string;
   size: string;
@@ -23,4 +27,9 @@ export interface Product {
 export interface ProductsResponse {
   message: string;
   products: Product[];
+}
+
+export interface ProductResponse {
+  message: string;
+  product: Product;
 }

@@ -22,11 +22,8 @@
     padding: 1% 5% 5% 5%;
 }
 
-.comment-commander-title {
-  text-align: center;
-}
-.comment-commander-text {
-  text-align: center;
+.product-image {
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {

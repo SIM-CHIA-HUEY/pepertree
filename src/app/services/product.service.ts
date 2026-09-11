@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { Product, ProductsResponse } from '../models/product.model';
+import { ProductResponse, ProductsResponse } from '../models/product.model';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,10 @@ export class ProductService {
 
   getProducts(): Observable<ProductsResponse> {
     return this.http.get<ProductsResponse>(this.apiUrl);
+  }
+
+  getProduct(id: string): Observable<ProductResponse> {
+    return this.http.get<ProductResponse>(`${this.apiUrl}/${id}`);
   }
 
 }
