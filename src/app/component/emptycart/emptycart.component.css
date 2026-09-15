@@ -1,5 +1,6 @@
 .empty-cart {
     border-bottom: 2px dotted var(--turquoise);
+    padding: 20x;
 }
 .empty-cart-title {
     text-align: center;
@@ -9,12 +10,28 @@
     font-weight: 400;
     font-style: normal;
     justify-self: center;
+    padding: 0 40px;
 }
 .empty-cart-text {
     text-align: center;
     justify-items: center;
+    padding: 0 40px;
 }
 .go-to-shop-button {
     width: 40%;
     margin-bottom: 20px ;
+}
+
+@media (min-width: 600px) {
+    .go-to-shop-button {
+        width: 40%;
+        margin-bottom: 20px ;
+    }
+}
+@media (max-width: 599px) {
+    .go-to-shop-button {
+        width: 70%;
+        margin: 20px 0 ;
+    }
+    
 }
