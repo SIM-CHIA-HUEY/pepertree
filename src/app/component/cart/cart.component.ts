@@ -62,6 +62,11 @@ export class CartComponent implements OnInit {
   }
 
   increaseQuantity(productId: string, currentQuantity: number): void {
+
+    if (currentQuantity >= 5) {
+      return;
+    }
+
     this.cartService.updateQuantity(
       productId,
       currentQuantity + 1

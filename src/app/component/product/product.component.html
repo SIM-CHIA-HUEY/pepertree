@@ -72,6 +72,7 @@
             type="button"
             class="quantity-btn"
             (click)="decreaseQuantity()"
+            [disabled]="quantity <= 1"
             aria-label="Diminuer la quantité"
           >
             −
@@ -85,7 +86,9 @@
             type="button"
             class="quantity-btn"
             (click)="increaseQuantity()"
+            [disabled]="quantity >= 5"
             aria-label="Augmenter la quantité"
+            
           >
             +
           </button>
@@ -95,7 +98,13 @@
       </div>
 
       <div class="buttons">
-        <button class="btn btn-primary-magenta" (click)="sendCart()">Ajouter au panier</button>
+        <button
+          type="button"
+          class="btn btn-primary-magenta"
+          (click)="sendCart()"
+        >
+          {{ isInCart ? 'Mettre à jour le panier' : 'Ajouter au panier' }}
+        </button>
       </div>
 
       <div class="product-info-bottom">
