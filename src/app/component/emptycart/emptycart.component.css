@@ -1,0 +1,20 @@
+.empty-cart {
+    border-bottom: 2px dotted var(--turquoise);
+}
+.empty-cart-title {
+    text-align: center;
+    color: var(--violet);
+    font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    justify-self: center;
+}
+.empty-cart-text {
+    text-align: center;
+    justify-items: center;
+}
+.go-to-shop-button {
+    width: 40%;
+    margin-bottom: 20px ;
+}

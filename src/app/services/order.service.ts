@@ -26,6 +26,8 @@ export interface CreateOrderData {
   }[];
   deliveryMethod: DeliveryMethod;
   delivery: Delivery;
+  shippingMethod: 'tracked' | 'untracked' | null;
+
 }
 
 export interface OrderResponse {

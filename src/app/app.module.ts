@@ -10,6 +10,8 @@ import { BoutiqueComponent } from './component/boutique/boutique.component';
 import { ProductComponent } from './component/product/product.component';
 import { CartComponent } from './component/cart/cart.component';
 import { OrderComponent } from './component/order/order.component';
+import { EmptycartComponent } from './component/emptycart/emptycart.component';
+import { ThankyouComponent } from './component/thankyou/thankyou.component';
 import { AccueilComponent } from './component/accueil/accueil.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { AproposComponent } from './component/apropos/apropos.component';
@@ -25,6 +27,8 @@ import { JournalblogComponent } from './component/journalblog/journalblog.compon
     ProductComponent,
     CartComponent,
     OrderComponent,
+    EmptycartComponent,
+    ThankyouComponent,
     AccueilComponent,
     ContactComponent,
     AproposComponent,

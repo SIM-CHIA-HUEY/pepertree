@@ -1,103 +1,122 @@
-<h1 class="cart-title">
-    RECAP DE MA COMMANDE
-</h1>
+@if (cart && cart.items.length > 0) {
 
-<div class="cart-details-overview">
-    <div class="cart-summary">
-        <div class="summary-details">
-            <p class="summary-title">Détails</p>
+    <h1 class="cart-title">
+        RECAP DE MA COMMANDE
+    </h1>
 
-            @if (cart) {
+    <div class="cart-details-overview">
+        <div class="cart-summary">
+            <div class="summary-details">
+                <p class="summary-title">Détails</p>
 
-                @for (item of cart.items; track item.productId._id) {
-                    <div class="product">
-                        <div class="image">
-                            <img
-                                class="product-image"
-                                [src]="item.productId.images[0].url"
-                                [alt]="item.productId.images[0].alt"
-                            /></div>
-                        <div class="item-details">
-                            <div class="item-title-delete">
-                                <div class="small-title">{{ item.productId.name }}</div>
+                @if (cart) {
 
-                                <button type="button"
-                                        class="remove-product"
-                                        (click)="deleteProduct(item.productId._id, item.quantity)">
-                                            <i class="fa-solid fa-xmark"></i>
-                                </button>
+                    @for (item of cart.items; track item.productId._id) {
+                        <div class="product">
+                            <div class="image">
+                                <img
+                                    class="product-image"
+                                    [src]="item.productId.images[0].url"
+                                    [alt]="item.productId.images[0].alt"/>
                             </div>
-                            <div class="numbers">
-                                <div>€ {{ item.productId.price  | number:'1.2-2' }}</div>
-                                
-                                <div class="quantity-stepper">
-                                        <button
-                                            type="button"
-                                            (click)="decreaseQuantity(item.productId._id, item.quantity)"
-                                            [disabled]="item.quantity <= 1">
-                                            −
-                                        </button>
+                            <div class="item-details">
+                                <div class="item-title-delete">
+                                    <div class="small-title">{{ item.productId.name }}</div>
 
-                                        <span>{{ item.quantity }}</span>
-
-                                        <button
-                                            type="button"
-                                            (click)="increaseQuantity(item.productId._id, item.quantity)">
-                                            +
-                                        </button>
+                                    <button type="button"
+                                            class="remove-product"
+                                            (click)="deleteProduct(item.productId._id, item.quantity)">
+                                                <i class="fa-solid fa-xmark"></i>
+                                    </button>
                                 </div>
-                                
+                                <div class="numbers">
+                                    <div>€ {{ item.productId.price  | number:'1.2-2' }}</div>
+                                    
+                                    <div class="quantity-stepper">
+                                            <button
+                                                type="button"
+                                                (click)="decreaseQuantity(item.productId._id, item.quantity)"
+                                                [disabled]="item.quantity <= 1">
+                                                −
+                                            </button>
+
+                                            <span>{{ item.quantity }}</span>
+
+                                            <button
+                                                type="button"
+                                                (click)="increaseQuantity(item.productId._id, item.quantity)">
+                                                +
+                                            </button>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    }
                 }
-            }
+            </div>
+
+            <div class="cart-subtotal">
+                <div>Sous-total</div>
+                <div class="small-title">€ {{ getCartTotal() | number:'1.2-2' }}</div>
+            </div>    
         </div>
 
-        <div class="cart-subtotal">
-            <div>Sous-total</div>
-            <div class="small-title">€ {{ getCartTotal() | number:'1.2-2' }}</div>
-        </div>    
+        <div class="delivery-choice">
+            <p class="summary-title">Mode de livraison</p>
+
+                <label class="delivery-option">
+                    <input
+                        type="radio"
+                        name="delivery"
+                        value="hand_delivery"
+                        [(ngModel)]="selectedDelivery"
+                        (change)="saveDeliveryMethod()"
+                    >
+
+                    <span>Livraison en main propre</span>
+                </label>
+
+
+                <label class="delivery-option">
+                    <input
+                        type="radio"
+                        name="delivery"
+                        value="mail_delivery"
+                        [(ngModel)]="selectedDelivery"
+                        (change)="saveDeliveryMethod()"
+                    >
+
+                    <span>Livraison à domicile</span>
+                </label>
+
+                @if (
+                        formSubmitted &&
+                        ! selectedDelivery
+                    ) {
+                        <p class="error-message">
+                            Oublie pas de choisir un mode de livraison.
+                        </p>
+                    }
+
+            <button
+                    class="btn btn-primary-magenta"
+                    type="button"
+                    (click)="goToOrder()">
+                    Suivant
+            </button>
+            
+        </div>
+
     </div>
+    
+    <!-- Si y'a pas de produits -->
+} @else {
 
-    <div class="delivery-choice">
-        <p class="summary-title">Mode de livraison</p>
+    <app-emptycart></app-emptycart>
 
-            <label class="delivery-option">
-                <input
-                    type="radio"
-                    name="delivery"
-                    value="hand_delivery"
-                    [(ngModel)]="selectedDelivery"
-                    (change)="saveDeliveryMethod()"
-                >
+}
 
-                <span>Livraison en main propre</span>
-            </label>
-
-
-            <label class="delivery-option">
-                <input
-                    type="radio"
-                    name="delivery"
-                    value="mail_delivery"
-                    [(ngModel)]="selectedDelivery"
-                    (change)="saveDeliveryMethod()"
-                >
-
-                <span>Livraison à domicile</span>
-            </label>
-
-        <button
-                class="btn btn-primary-magenta"
-                type="button"
-                (click)="goToOrder()">
-                Suivant
-        </button>
-        
-    </div>
-
-</div>
 
 <div class="process-explanation">
     <div class="explanation-bloc">

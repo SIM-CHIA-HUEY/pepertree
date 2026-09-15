@@ -1,0 +1,15 @@
+.thank-you-title{
+    text-align: center;
+    color: var(--magenta);
+    font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem);
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    justify-self: center;
+}
+
+.thank-you-content {
+    color: var(--violet);
+    text-align: center;
+    justify-items: center;
+}

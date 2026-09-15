@@ -4,6 +4,7 @@ import { AccueilComponent } from './component/accueil/accueil.component';
 import { BoutiqueComponent } from './component/boutique/boutique.component';
 import { ProductComponent } from './component/product/product.component';
 import { CartComponent } from './component/cart/cart.component';
+import { ThankyouComponent } from './component/thankyou/thankyou.component';
 import { OrderComponent } from './component/order/order.component';
 import { AproposComponent } from './component/apropos/apropos.component';
 import { ContactComponent } from './component/contact/contact.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: '', component: AccueilComponent },
   { path: 'boutique', component: BoutiqueComponent },
   { path: 'panier', component: CartComponent },
+  { path: 'merci', component: ThankyouComponent},
   { path: 'commande', component: OrderComponent },
   { path: 'produit/:slug', component: ProductComponent},
   { path: 'quiestpeper', component: AproposComponent },

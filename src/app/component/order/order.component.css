@@ -122,3 +122,21 @@ input[type="tel"] {
 .delivery-option input {
     cursor: pointer;
 }
+
+.btn {
+    margin-top: 20px;
+}
+
+.input-error {
+    border: 1px solid #d93025;
+}
+
+.error-message {
+    color: #d93025;
+    font-size: 0.85rem;
+    margin-top: 0;
+}
+
+.radio-error {
+  outline: 1px solid #d93025;
+}

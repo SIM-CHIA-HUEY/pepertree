@@ -74,9 +74,6 @@ export class ProductComponent implements OnInit {
       this.product._id,
       this.quantity
     ).subscribe({
-      next: () => {
-        this.router.navigate(['/panier']);
-      },
       error: (error) => {
         console.error('Erreur lors de l’ajout au panier :', error);
       }

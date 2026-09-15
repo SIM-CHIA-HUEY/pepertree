@@ -13,6 +13,8 @@ export class CartComponent implements OnInit {
 
   cart: Cart | null = null;
   selectedDelivery: DeliveryMethod | null = null;
+  formSubmitted = false;
+
 
   constructor(
     private cartService: CartService,
@@ -46,17 +48,6 @@ export class CartComponent implements OnInit {
     });
 
   }
-
-  // UNE AUTRE MANIERE D'ECRIRE :
-  // getCartTotal(): number {
-  //   if (!this.cart) {
-  //     return 0;
-  //   }
-
-  //   return this.cart.items.reduce((total, item) => {
-  //     return total + item.productId.price * item.quantity;
-  //   }, 0);
-  // }
 
   getCartTotal(): number {
     if (!this.cart) {
@@ -135,6 +126,9 @@ export class CartComponent implements OnInit {
   }
 
   goToOrder(): void {
+
+    this.formSubmitted = true;
+
     const deliveryMethod =
       this.cartService.getDeliveryMethod();
     if (!deliveryMethod) {
