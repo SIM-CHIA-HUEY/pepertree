@@ -86,6 +86,9 @@
 }
 
 /* ====== BLOC 4 : Produits ====== */
+.loading {
+  text-align: center;
+}
 .product-row {
   display: flex;
   gap: var(--space-4);

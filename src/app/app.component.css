@@ -254,36 +254,3 @@ img {
   justify-self: center;
   padding: var(--space-6);
 }
-
-/* ====== Responsive ====== */
-@media (max-width: 960px) {
-  .hero-inner {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-  .hero-cta {
-    justify-content: center;
-  }
-  .tipjar-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-  .main-nav {
-    gap: 8px;
-  }
-}
-
-@media (max-width: 640px) {
-  .product-row,
-  .news-grid {
-    justify-content: center;
-  }
-  .product-card,
-  .news-card {
-    max-width: 100%;
-  }
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}

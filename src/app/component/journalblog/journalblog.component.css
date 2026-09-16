@@ -1,14 +1,3 @@
-.journal-component {
-    background-color: var(--turquoise);
-    top: 120px;
-    /* position: absolute; */
-}
-@media (max-width: 702px) {
-    .journal-component {
-        top: 140px;
-    }
-}
-
 /* Carousel styles */
 .image-carousel {
   position: relative;
@@ -54,7 +43,7 @@
 }
 
 .carousel-prev, .carousel-next {
-  background: #48317B;
+  background: var(--turquoise);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -65,12 +54,12 @@
 }
 
 .carousel-prev:hover, .carousel-next:hover {
-  background: #3a2862;
+  background: var(--turquoise);
 }
 
 .carousel-indicator {
   font-family: 'Nunito', sans-serif;
-  color: #48317B;
+  color: var(--turquoise);
   font-weight: 600;
 }
 
@@ -102,7 +91,7 @@
 /* Article text styles */
 .article-text {
   padding: 15px;
-  background: #f9f9f9;
+  background: var(--paper);
   border-radius: 8px;
 }
 
@@ -156,12 +145,14 @@
   gap: 20px;
   padding: 20px;
   justify-content: center;
+  background-color: var(--turquoise);
+
 }
 
 .journal-title {
   text-align: center;
   margin: 40px 0;
-  color: #48317B;
+  color: var(--turquoise);
 }
 
 .journal-title h1 {
@@ -191,7 +182,7 @@
 }
 
 .pagination-arrow {
-  background: #48317B;
+  background: var(--turquoise);
   color: white;
   border: none;
   padding: 8px 12px;
@@ -208,14 +199,14 @@
 }
 
 .pagination-arrow:hover:not(:disabled) {
-  background: #3a2862;
+  background: var(--turquoise);
   transform: translateY(-2px);
 }
 
 .pagination-number {
   background: white;
-  color: #48317B;
-  border: 2px solid #48317B;
+  color: var(--turquoise);
+  border: 2px solid var(--turquoise);
   padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
@@ -223,12 +214,12 @@
 }
 
 .pagination-number:hover {
-  background: #48317B;
+  background: var(--turquoise);
   color: white;
 }
 
 .pagination-number.active {
-  background: #48317B;
+  background: var(--turquoise);
   color: white;
   font-weight: bold;
 }

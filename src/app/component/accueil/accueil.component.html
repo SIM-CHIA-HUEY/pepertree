@@ -30,43 +30,51 @@
 <!-- ====== BLOC 4 : Produits (Nouveautés) ====== -->
 <section class="section products">
   <div class="container">
+    @if (isLoading) {
 
-    <div class="product-row">
+      <div class="loading">
+        <p>La boutique se réveille… 🐾 Donne-moi 1 minute</p>
+      </div>
 
-      @for (item of productPeperTree; track item._id) {
+    } @else {
 
-        <div>
+      <div class="product-row">
 
-          <article class="product-card"
-          >
+        @for (item of productPeperTree | slice:0:6; track item._id) {
 
-            <img
-              class="product-image"
-              [src]="item.images[0].url"
-              [alt]="item.images[0].alt"
-              [routerLink]="['/produit', item.slug]"
-            />
+          <div>
 
-            <h3>{{ item.name }}</h3>
+            <article class="product-card"
+            >
 
-            <p class="price">
-              €{{ item.price  | number:'1.2-2' }}
-            </p>
+              <img
+                class="product-image"
+                [src]="item.images[0].url"
+                [alt]="item.images[0].alt"
+                [routerLink]="['/produit', item.slug]"
+              />
 
-            <button
-              class="btn btn-primary-magenta"
-              type="button"
-              (click)="sendCart(item)">
-              Ajouter au panier
-            </button>
+              <h3>{{ item.name }}</h3>
 
-          </article>
+              <p class="price">
+                €{{ item.price  | number:'1.2-2' }}
+              </p>
 
-        </div>
+              <button
+                class="btn btn-primary-magenta"
+                type="button"
+                (click)="sendCart(item)">
+                Ajouter au panier
+              </button>
 
-      }
+            </article>
 
-    </div>
+          </div>
+
+        }
+
+      </div>
+    }
 
     <div class="section-foot">
       <a routerLink="/boutique" routerLinkActive="active" class="link">Voir la boutique</a>
