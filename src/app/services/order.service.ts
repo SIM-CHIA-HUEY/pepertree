@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 
 import { DeliveryMethod } from '../models/cart.model';
 
+import { environment } from '../../environments/environment';
+
 export interface Customer {
   name: string;
   email: string;
@@ -40,7 +42,9 @@ export interface OrderResponse {
 })
 export class OrderService {
 
-  private apiUrl = 'http://localhost:3000/orders';
+  // private apiUrl = 'http://localhost:3000/orders';
+  private apiUrl = `${environment.apiUrl}/orders`;
+
 
   constructor(
     private http: HttpClient

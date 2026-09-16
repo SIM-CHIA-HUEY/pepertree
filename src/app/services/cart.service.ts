@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, tap } from 'rxjs';
 import { Cart } from '../models/cart.model';
+import { environment } from '../../environments/environment';
 
 export interface CartResponse {
   message: string;
@@ -13,7 +14,8 @@ export interface CartResponse {
 })
 export class CartService {
 
-  private apiUrl = 'http://localhost:3000/carts';
+  // private apiUrl = 'http://localhost:3000/carts';
+  private apiUrl = `${environment.apiUrl}/carts`;
   private cartStorageKey = 'cartId';
   private deliveryStorageKey = 'deliveryMethod';
 
