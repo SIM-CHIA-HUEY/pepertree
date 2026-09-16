@@ -10,13 +10,33 @@ h1 {
 
 .faq-section {
     padding: 0 10%;
+    margin-bottom: 80px;
     text-align: justify;
 }
 
-h3 {
-  color: var(--violet);
+.subtitle {
+  color: var(--paper);
+  border: 2px solid var(--turquoise);
+  padding: 6px;
+  margin-bottom: 0;
+  margin-top: 80px;
+  text-align: center;
+  background-color: var(--turquoise);
 }
 
-.last-question-faq {
-  padding: 20px 0;
+.faq-details {
+  border-bottom: 1px solid var(--turquoise);
+  padding: 16px 0;
+}
+
+.faq-summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--violet);
+  text-align: start;
+}
+
+.faq-p {
+  margin-top: 20px;
+  text-align: start;
 }
