@@ -6,11 +6,11 @@
 
     <div class="order-container">
 
-        @for (item of cart.items; track item.productId._id) {
+        <div class="order-summary">
 
-            <div class="order-summary">
+            <p class="summary-title">Détails</p>
 
-                <p class="summary-title">Détails</p>
+            @for (item of cart.items; track item.productId._id) {
 
                 <div class="item">
 
@@ -41,62 +41,64 @@
 
                 </div>
 
-                <div class="product-costs-bloc">
+            }
 
-                    <div class="costs-title">
-                        Total produits
-                    </div>
+            <div class="product-costs-bloc">
 
-                    <div class="costs-price">
-                        € {{ getCartTotal() | number:'1.2-2' }}
-                    </div>
-
+                <div class="costs-title">
+                    Total produits
                 </div>
 
-                <div class="delivery-costs-bloc">
-
-                    <div class="costs-title">
-                        Frais de port
-                    </div>
-
-                    <div class="costs-price">
-
-                        @if (
-                            !shippingMethod &&
-                            selectedDelivery === 'mail_delivery'
-                        ) {
-
-                            En cours de calcul...
-
-                        } @else if (getShippingCost() === 0) {
-
-                            Gratuit
-
-                        } @else {
-
-                            + {{ getShippingCost() | number:'1.2-2' }} €
-
-                        }
-
-                    </div>
-
+                <div class="costs-price">
+                    € {{ getCartTotal() | number:'1.2-2' }}
                 </div>
 
-                <div class="grand-total-bloc">
+            </div>
 
-                    <div class="grand-total-title">
-                        GRAND TOTAL
-                    </div>
+            <div class="delivery-costs-bloc">
 
-                    <div class="grand-total-price">
-                        {{ (getCartTotal() + getShippingCost()) | number:'1.2-2' }}
-                    </div>
+                <div class="costs-title">
+                    Frais de port
+                </div>
+
+                <div class="costs-price">
+
+                    @if (
+                        !shippingMethod &&
+                        selectedDelivery === 'mail_delivery'
+                    ) {
+
+                        En cours de calcul...
+
+                    } @else if (getShippingCost() === 0) {
+
+                        Gratuit
+
+                    } @else {
+
+                        + {{ getShippingCost() | number:'1.2-2' }} €
+
+                    }
 
                 </div>
 
             </div>
 
-        }
+            <div class="grand-total-bloc">
+
+                <div class="grand-total-title">
+                    GRAND TOTAL
+                </div>
+
+                <div class="grand-total-price">
+                    {{ (getCartTotal() + getShippingCost()) | number:'1.2-2' }}
+                </div>
+            
+            </div>
+        
+        </div>
+
+        
 
         <div class="client-information-delivery">
 
