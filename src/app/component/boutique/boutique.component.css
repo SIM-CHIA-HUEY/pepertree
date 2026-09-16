@@ -1,6 +1,5 @@
 .product-page {
   background-image: url("/assets/Pepetree-background-pattern.jpg");
-  background-repeat: repeat-y;
   background-size: contain;
 }
 
@@ -20,6 +19,12 @@
     background-color: var(--paper);
     margin: 0px 5% 100px 5%;
     padding: 1% 5% 5% 5%;
+    width: stretch;
+    justify-content: center;
+}
+
+.loading {
+  text-align: center;
 }
 
 .product-image {

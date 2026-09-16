@@ -14,6 +14,7 @@ export class BoutiqueComponent implements OnInit {
 
   productPeperTree: Product[] = [];
   product: Product | null = null;
+  isLoading = true;
 
 
   constructor(
@@ -23,9 +24,12 @@ export class BoutiqueComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.isLoading = true;
+
     this.productService.getProducts().subscribe({
       next: (response) => {
         this.productPeperTree = response.products;
+        this.isLoading = false;
       },
 
       error: (error) => {
@@ -33,6 +37,7 @@ export class BoutiqueComponent implements OnInit {
           'Erreur lors de la récupération des produits',
           error
         );
+        this.isLoading = false;
       }
     });
 
